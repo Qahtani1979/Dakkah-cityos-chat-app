@@ -4,19 +4,21 @@ import { BottomDrawer } from './components/bottom-drawer';
 import { DetailsDrawer } from './components/details-drawer';
 import { AppMenu } from './components/app-menu';
 import { RightDrawer } from './components/right-drawer';
-import { Sparkles, Menu, LayoutGrid, HelpCircle } from 'lucide-react';
+import { Sparkles, Menu, LayoutGrid, HelpCircle, Activity } from 'lucide-react';
 import { Button } from './components/ui/button';
 import type { POI, Ticket, OrderStatus, Event as CopilotEvent, Product, ServiceItem, AnalyticsData, MediaItem, Ambassador } from './types/copilot';
 import { AuthProvider } from './context/auth-context';
 import { Toaster } from 'sonner';
 import { useCopilot } from './hooks/useCopilot';
 import { SystemShowcase } from './components/design-system/SystemShowcase';
+import { SystemHealthDashboard } from './components/system-health-dashboard';
 import { AnimatePresence } from 'motion/react';
 
 function AppContent() {
   const copilot = useCopilot();
   const [showExamples, setShowExamples] = useState(true);
   const [showcaseOpen, setShowcaseOpen] = useState(false);
+  const [healthOpen, setHealthOpen] = useState(false);
   const [pendingPrompt, setPendingPrompt] = useState<string | null>(null);
   
   // Drawer States
@@ -101,6 +103,17 @@ function AppContent() {
                <p className="text-[10px] text-stone-400">Powered by Super Copilot</p>
              </div>
              
+             {/* System Health */}
+             <Button 
+               variant="ghost" 
+               size="icon" 
+               onClick={() => setHealthOpen(true)}
+               className="h-10 w-10 rounded-xl border border-stone-200 text-stone-500 hover:text-stone-900 hover:bg-stone-50"
+               title="System Health"
+             >
+               <Activity className="w-5 h-5" />
+             </Button>
+
              {/* Design System Trigger */}
              <Button 
                variant="ghost" 
@@ -175,6 +188,10 @@ function AppContent() {
           <SystemShowcase onClose={() => setShowcaseOpen(false)} />
         )}
       </AnimatePresence>
+
+      {healthOpen && (
+        <SystemHealthDashboard onClose={() => setHealthOpen(false)} />
+      )}
     </div>
   );
 }
