@@ -1,0 +1,79 @@
+[
+  {
+    "id": "barber",
+    "keywords": ["barber", "shave", "haircut", "men's hair", "fade"],
+    "response": "Look sharp. Top-rated barbers nearby.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "bar1", "name": "The Gentlemen's Lounge", "category": "Barber", "image": "barber", "rating": 4.9, "distance": "1.0 km", "vibe": ["#classic", "#luxury"], "priceRange": "$$$", "openNow": true },
+          { "id": "bar2", "name": "Fade & Blade", "category": "Barber Shop", "image": "barber", "rating": 4.7, "distance": "2.2 km", "vibe": ["#modern", "#quick"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Book Seat", "Services", "Queue Status"]
+  },
+  {
+    "id": "nails",
+    "keywords": ["nails", "manicure", "pedicure", "nail salon", "nail spa"],
+    "response": "Pamper yourself at these nail salons.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "ns1", "name": "Polish & Co", "category": "Nail Salon", "image": "boutiques", "rating": 4.8, "distance": "1.5 km", "vibe": ["#nail-art", "#relaxing"], "priceRange": "$$", "openNow": true },
+          { "id": "ns2", "name": "Luxe Nails", "category": "Nail Spa", "image": "boutiques", "rating": 4.9, "distance": "3.0 km", "vibe": ["#premium", "#spa"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Book Appt", "Design Gallery", "Price List"]
+  },
+  {
+    "id": "makeup",
+    "keywords": ["makeup", "mua", "cosmetics", "makeover", "beauty artist"],
+    "response": "Find professional makeup artists.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "mua1", "name": "Glam Squad Studio", "category": "Makeup Studio", "image": "boutiques", "rating": 4.9, "distance": "4.0 km", "vibe": ["#bridal", "#glam"], "priceRange": "$$$", "openNow": true },
+          { "id": "mua2", "name": "Beauty Bar", "category": "Beauty Salon", "image": "boutiques", "rating": 4.7, "distance": "2.5 km", "vibe": ["#express", "#daily"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Portfolio", "Book Session", "Consultation"]
+  },
+  {
+    "id": "spa",
+    "keywords": ["spa", "massage", "facial", "relax", "treatment"],
+    "response": "Relax and rejuvenate.",
+    "artifact": {
+      "type": "service-menu",
+      "data": {
+        "title": "Spa Menu",
+        "items": [
+          { "id": "spa1", "name": "Swedish Massage", "description": "Relaxing full body massage.", "duration": "60m", "price": "SAR 400" },
+          { "id": "spa2", "name": "Deep Tissue", "description": "Therapeutic massage for muscle tension.", "duration": "90m", "price": "SAR 550" },
+          { "id": "spa3", "name": "Hydrating Facial", "description": "Deep cleansing and hydration.", "duration": "60m", "price": "SAR 350" }
+        ]
+      }
+    },
+    "chips": ["Book Now", "View Packages", "Gift Voucher"]
+  },
+  {
+    "id": "hair_salon",
+    "keywords": ["salon", "hairdresser", "blowout", "color", "dye"],
+    "response": "Top hair salons in your area.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "hs1", "name": "Vogue Salon", "category": "Hair Salon", "image": "boutiques", "rating": 4.8, "distance": "2.0 km", "vibe": ["#color-experts", "#luxury"], "priceRange": "$$$", "openNow": true },
+          { "id": "hs2", "name": "The Blowout Bar", "category": "Styling", "image": "boutiques", "rating": 4.6, "distance": "1.2 km", "vibe": ["#quick", "#styling"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Book Styling", "Color Consult", "Price List"]
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "id": "kids_activities",
+    "keywords": ["kids", "play", "playground", "fun", "children"],
+    "response": "Fun places for the little ones.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "kid1", "name": "Chuck E. Cheese", "category": "Arcade", "image": "family", "rating": 4.5, "distance": "3.0 km", "vibe": ["#games", "#pizza"], "priceRange": "$$", "openNow": true },
+          { "id": "kid2", "name": "Fizz Hizz", "category": "Trampoline Park", "image": "family", "rating": 4.7, "distance": "4.5 km", "vibe": ["#active", "#bounce"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Tickets", "Party Packages", "Hours"]
+  },
+  {
+    "id": "family_friendly",
+    "keywords": ["family", "outing", "picnic", "park"],
+    "response": "Great spots for the whole family.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "fam1", "name": "Wadi Hanifa", "category": "Park", "image": "hiking-trail", "rating": 4.8, "distance": "10.0 km", "vibe": ["#nature", "#bbq"], "priceRange": "Free", "openNow": true },
+          { "id": "fam2", "name": "Riyadh Zoo", "category": "Zoo", "image": "family", "rating": 4.4, "distance": "6.0 km", "vibe": ["#animals", "#learning"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Map", "Tickets", "Stroller Friendly"]
+  },
+  {
+    "id": "baby_store",
+    "keywords": ["baby", "infant", "toddler", "maternity", "toys"],
+    "response": "Essentials for your baby.",
+    "artifact": {
+      "type": "product-carousel",
+      "data": {
+        "title": "Baby Essentials",
+        "products": [
+          { "id": "bb1", "name": "Stroller System", "brand": "Chicco", "price": "SAR 1800", "image": "https://images.unsplash.com/photo-1591026002956-6a84704e6783?auto=format&fit=crop&q=80&w=400", "description": "3-in-1 travel system." },
+          { "id": "bb2", "name": "Organic Cotton Set", "brand": "H&M Baby", "price": "SAR 150", "image": "https://images.unsplash.com/photo-1522771753035-1a5b6562f3ba?auto=format&fit=crop&q=80&w=400", "description": "Soft organic cotton basics." }
+        ]
+      }
+    },
+    "chips": ["Delivery", "Gift Registry", "Size Guide"]
+  },
+  {
+    "id": "daycare",
+    "keywords": ["daycare", "nursery", "preschool", "childcare"],
+    "response": "Trusted childcare centers.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "dc1", "name": "Little Stars", "category": "Nursery", "image": "family", "rating": 4.8, "distance": "1.0 km", "vibe": ["#montessori", "#caring"], "priceRange": "$$$", "openNow": true },
+          { "id": "dc2", "name": "Happy Kids", "category": "Daycare", "image": "family", "rating": 4.6, "distance": "2.0 km", "vibe": ["#play-based", "#safe"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Schedule Tour", "Fees", "Curriculum"]
+  }
+]

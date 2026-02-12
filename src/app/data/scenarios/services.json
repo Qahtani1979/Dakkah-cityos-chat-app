@@ -1,0 +1,379 @@
+[
+  {
+    "id": "legal_svc",
+    "keywords": ["lawyer", "legal", "attorney", "notary"],
+    "response": "I can refer you to specialized legal services.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "l1", "name": "Al-Faisal Partners", "category": "Law Firm", "image": "office", "rating": 4.9, "distance": "2.5 km", "vibe": ["#corporate", "#family-law"], "priceRange": "$$$$", "openNow": true },
+          { "id": "l2", "name": "Quick Notary", "category": "Legal Services", "image": "office", "rating": 4.7, "distance": "1.0 km", "vibe": ["#fast", "#documents"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Consultation", "Document Review", "Call"]
+  },
+  {
+    "id": "automotive",
+    "keywords": ["mechanic", "car repair", "oil change", "tire", "garage"],
+    "response": "Trusted auto services nearby.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "auto1", "name": "Speedy Fix", "category": "Mechanic", "image": "garage", "rating": 4.8, "distance": "3.0 km", "vibe": ["#quick", "#honest"], "priceRange": "$$", "openNow": true },
+          { "id": "auto2", "name": "Luxe Auto Spa", "category": "Detailing", "image": "garage", "rating": 4.9, "distance": "1.5 km", "vibe": ["#premium", "#cleaning"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Book Service", "Roadside Assist", "Quote"]
+  },
+  {
+    "id": "financial",
+    "keywords": ["bank", "atm", "accountant", "tax", "finance"],
+    "response": "Banking and financial services.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "fin1", "name": "Al Rajhi Bank", "category": "Bank Branch", "image": "office", "rating": 4.5, "distance": "0.5 km", "vibe": ["#atm", "#services"], "priceRange": "n/a", "openNow": true },
+          { "id": "fin2", "name": "Tax Experts", "category": "Consultancy", "image": "office", "rating": 4.8, "distance": "2.0 km", "vibe": ["#vat", "#business"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Find ATM", "Book Appt", "Rates"]
+  },
+  {
+    "id": "government",
+    "keywords": ["ministry", "embassy", "passport", "visa", "id"],
+    "response": "Government service centers.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "gov1", "name": "Passport Office", "category": "Government", "image": "office", "rating": 4.0, "distance": "5.0 km", "vibe": ["#documents", "#official"], "priceRange": "n/a", "openNow": true },
+          { "id": "gov2", "name": "Absher Kiosk", "category": "Self Service", "image": "office", "rating": 4.5, "distance": "1.0 km", "vibe": ["#fast", "#digital"], "priceRange": "n/a", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Appointments", "Requirements", "Map"]
+  },
+  {
+    "id": "tailor",
+    "keywords": ["tailor", "sewing", "alteration", "dressmaker"],
+    "response": "Expert tailoring services.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "tl1", "name": "The Master Tailor", "category": "Tailoring", "image": "boutiques", "rating": 4.9, "distance": "1.2 km", "vibe": ["#bespoke", "#suits"], "priceRange": "$$$", "openNow": true },
+          { "id": "tl2", "name": "Quick Stitch", "category": "Alterations", "image": "boutiques", "rating": 4.6, "distance": "0.8 km", "vibe": ["#repairs", "#fast"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Measurements", "Pricing", "Book"]
+  },
+  {
+    "id": "cleaning",
+    "keywords": ["dry clean", "laundry", "cleaner", "wash"],
+    "response": "Laundry and cleaning services.",
+    "artifact": {
+      "type": "service-menu",
+      "data": {
+        "title": "Laundry Services",
+        "items": [
+          { "id": "cl1", "name": "Wash & Fold", "description": "Per kg service.", "duration": "24h", "price": "SAR 15/kg" },
+          { "id": "cl2", "name": "Dry Cleaning", "description": "Suit / Dress cleaning.", "duration": "48h", "price": "SAR 25/item" },
+          { "id": "cl3", "name": "Express", "description": "Same day service.", "duration": "6h", "price": "+50%" }
+        ]
+      }
+    },
+    "chips": ["Schedule Pickup", "Pricing", "Locations"]
+  },
+  {
+    "id": "courier",
+    "keywords": ["courier", "shipping", "post", "delivery", "dhl", "fedex", "aramex"],
+    "response": "Shipping and courier services.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "cou1", "name": "DHL Express", "category": "Courier", "image": "office", "rating": 4.7, "distance": "1.5 km", "vibe": ["#international", "#fast"], "priceRange": "$$$", "openNow": true },
+          { "id": "cou2", "name": "SMSA Express", "category": "Courier", "image": "office", "rating": 4.5, "distance": "0.5 km", "vibe": ["#local", "#reliable"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Track Package", "Ship Now", "Rates"]
+  },
+  {
+    "id": "tech_repair",
+    "keywords": ["phone repair", "laptop repair", "computer", "screen fix"],
+    "response": "Get your devices fixed.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "tr1", "name": "iFix", "category": "Mobile Repair", "image": "office", "rating": 4.8, "distance": "2.0 km", "vibe": ["#apple", "#quick"], "priceRange": "$$", "openNow": true },
+          { "id": "tr2", "name": "Tech Doctor", "category": "Computer Repair", "image": "office", "rating": 4.6, "distance": "3.5 km", "vibe": ["#laptops", "#diagnostic"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Get Quote", "Check Status", "Warranty"]
+  },
+  {
+    "id": "florist",
+    "keywords": ["florist", "flowers", "bouquet", "roses", "plants"],
+    "response": "Beautiful blooms nearby.",
+    "artifact": {
+      "type": "product-carousel",
+      "data": {
+        "title": "Fresh Flowers",
+        "products": [
+          { "id": "fl1", "name": "Red Rose Bouquet", "brand": "Spring", "price": "SAR 150", "image": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?auto=format&fit=crop&q=80&w=400", "description": "Classic red roses, dozen." },
+          { "id": "fl2", "name": "Mixed Tulips", "brand": "Blooms", "price": "SAR 120", "image": "https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&q=80&w=400", "description": "Colorful spring mix." }
+        ]
+      }
+    },
+    "chips": ["Delivery", "Custom Arrangement", "Occasions"]
+  },
+  {
+    "id": "logistics_tracking",
+    "keywords": ["track shipment", "where is my truck", "fleet status"],
+    "response": "Real-time fleet tracking initiated.",
+    "artifact": {
+      "type": "logistics-map",
+      "data": {
+        "assets": [
+          { "id": "TRK-01", "x": 20, "y": 30, "status": "moving", "bearing": 45 },
+          { "id": "TRK-02", "x": 60, "y": 70, "status": "delayed", "bearing": 180 },
+          { "id": "TRK-03", "x": 40, "y": 50, "status": "moving", "bearing": 90 }
+        ],
+        "bgImage": "https://images.unsplash.com/photo-1681514583222-0579e6835666?auto=format&fit=crop&q=80&w=800"
+      }
+    },
+    "chips": ["View Detail", "Contact Driver", "Route History"]
+  },
+  {
+    "id": "warehouse_ops",
+    "keywords": ["warehouse", "picker", "inventory check"],
+    "response": "Warehouse picking interface loaded.",
+    "artifact": {
+      "type": "warehouse-picker",
+      "data": {
+        "orderId": "PICK-112",
+        "items": [
+          { "id": "1", "sku": "WID-100", "name": "Widget A", "loc": "A-01", "qty": 2, "picked": false, "image": "https://images.unsplash.com/photo-1656543802898-41c8c46683a7?auto=format&fit=crop&q=80&w=200" },
+          { "id": "2", "sku": "GAD-200", "name": "Gadget B", "loc": "B-04", "qty": 1, "picked": true, "image": "https://images.unsplash.com/photo-1761497715258-d144090c6d02?auto=format&fit=crop&q=80&w=200" },
+          { "id": "3", "sku": "TOOL-X", "name": "Power Drill", "loc": "C-12", "qty": 1, "picked": false, "image": "https://images.unsplash.com/photo-1756477436005-8ac1d0ecb78b?auto=format&fit=crop&q=80&w=200" }
+        ]
+      }
+    },
+    "chips": ["Scan Item", "Report Issue", "Next Order"]
+  },
+  {
+    "id": "delivery_proof",
+    "keywords": ["proof of delivery", "signature", "signed"],
+    "response": "Delivery signature captured.",
+    "artifact": {
+      "type": "proof-of-delivery",
+      "data": {
+        "id": "ORD-991",
+        "signedBy": "John Doe",
+        "timestamp": "2025-01-15 14:30",
+        "signature": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Signature_sample.svg"
+      }
+    },
+    "chips": ["Download PDF", "Email Receipt", "Archive"]
+  },
+  {
+    "id": "cold_chain",
+    "keywords": ["iot", "sensor", "temperature", "humidity", "cold chain"],
+    "response": "IoT Sensor Dashboard active.",
+    "artifact": {
+      "type": "iot-dashboard",
+      "data": {
+        "temp": 4.2,
+        "humidity": 55,
+        "status": "optimal",
+        "alerts": []
+      }
+    },
+    "chips": ["History", "Calibrate", "Alerts"]
+  },
+  {
+    "id": "fleet_service",
+    "keywords": ["maintenance", "truck service", "vehicle health"],
+    "response": "Fleet maintenance status.",
+    "artifact": {
+      "type": "fleet-maintenance",
+      "data": {
+        "vehicleId": "TRK-99",
+        "fuel": 45,
+        "tires": 90,
+        "serviceDue": "2025-02-01",
+        "vehicleImage": "https://images.unsplash.com/photo-1762245752333-c1ef6315a30c?auto=format&fit=crop&q=80&w=200",
+        "status": "Operational"
+      }
+    },
+    "chips": ["Schedule Service", "Log Issue", "Parts"]
+  },
+  {
+    "id": "package_track",
+    "keywords": ["track package", "shipment status", "where is my order"],
+    "response": "Tracking shipment PKG-8892.",
+    "artifact": {
+      "type": "logistics-timeline",
+      "data": {
+        "id": "PKG-8892",
+        "currentStage": "customs",
+        "stages": [
+          { "stage": "pickup", "time": "09:00 AM", "completed": true },
+          { "stage": "transit", "time": "02:00 PM", "completed": true },
+          { "stage": "customs", "time": "In Progress", "completed": false },
+          { "stage": "delivery", "time": "Est. Tomorrow", "completed": false }
+        ]
+      }
+    },
+    "chips": ["Notify Me", "Change Delivery", "Support"]
+  },
+  {
+    "id": "get_quote",
+    "keywords": ["quote", "price estimate", "service cost", "shipping rate"],
+    "response": "Calculate your shipping rate.",
+    "artifact": {
+      "type": "freight-quote",
+      "data": { 
+        "defaultWeight": 12.5,
+        "defaultDims": { "l": 40, "w": 30, "h": 20 },
+        "quotes": [
+          { "name": "Express Air", "type": "Express", "eta": "2 Days", "price": "$120.00" },
+          { "name": "Standard Ground", "type": "Standard", "eta": "5-7 Days", "price": "$45.50" }
+        ]
+      }
+    },
+    "chips": ["Accept", "Decline", "Modify"]
+  },
+  {
+    "id": "ship_label",
+    "keywords": ["print label", "shipping label", "barcode"],
+    "response": "Generating shipping label.",
+    "artifact": {
+      "type": "shipment-label",
+      "data": { 
+        "id": "LBL-882",
+        "serviceLevel": "EXP",
+        "trackingNumber": "1Z999AA10123456784",
+        "sender": { "name": "Acme Corp", "address": "123 Ind. Estate", "city": "Riyadh, SA" },
+        "receiver": { "name": "John Smith", "address": "45 Palm St", "city": "Jeddah, SA" }
+      }
+    },
+    "chips": ["Print", "Email", "Save PDF"]
+  },
+  {
+    "id": "driver_run",
+    "keywords": ["manifest", "run sheet", "driver schedule", "my stops"],
+    "response": "Driver run sheet loaded.",
+    "artifact": {
+      "type": "driver-manifest",
+      "data": {
+        "shiftId": "SHIFT-AM-01",
+        "date": "Today, Oct 24",
+        "stops": [
+          { "id": "1", "type": "PICKUP", "customer": "MegaStore HQ", "address": "King Fahd Rd, Exit 4", "timeWindow": "08:00 - 10:00", "status": "completed" },
+          { "id": "2", "type": "DROP", "customer": "Small Mart", "address": "Olaya St, Building 12", "timeWindow": "10:30 - 11:30", "status": "pending" },
+          { "id": "3", "type": "DROP", "customer": "Tech Zone", "address": "Digital City, B4", "timeWindow": "12:00 - 13:00", "status": "pending" }
+        ]
+      }
+    },
+    "chips": ["Start Route", "Map View", "Break"]
+  },
+  {
+    "id": "truck_load",
+    "keywords": ["load truck", "packing", "cargo plan"],
+    "response": "Truck loading plan optimization.",
+    "artifact": {
+      "type": "load-balancer",
+      "data": {
+        "truckType": "5-Ton Box",
+        "slots": [
+          { "id": "H1", "type": "heavy" }, { "id": "H2", "type": "heavy" }, { "id": "S1", "type": "standard" }, { "id": "S2", "type": "standard" },
+          { "id": "H3", "type": "heavy" }, { "id": "H4", "type": "heavy" }, { "id": "S3", "type": "standard" }, { "id": "S4", "type": "standard" },
+          { "id": "F1", "type": "fragile" }, { "id": "F2", "type": "fragile" }, { "id": "", "type": "empty" }, { "id": "", "type": "empty" },
+          { "id": "S5", "type": "standard" }, { "id": "S6", "type": "standard" }, { "id": "", "type": "empty" }, { "id": "", "type": "empty" },
+          { "id": "", "type": "empty" }, { "id": "", "type": "empty" }, { "id": "", "type": "empty" }, { "id": "", "type": "empty" },
+          { "id": "", "type": "empty" }, { "id": "", "type": "empty" }, { "id": "", "type": "empty" }, { "id": "", "type": "empty" }
+        ]
+      }
+    },
+    "chips": ["Confirm Load", "Rearrange", "Print"]
+  },
+  {
+    "id": "incident_log",
+    "keywords": ["report accident", "damage report", "incident"],
+    "response": "Incident reporting interface.",
+    "artifact": {
+      "type": "incident-report",
+      "data": { "id": "INC-NEW", "shipmentId": "TRK-99281-X" }
+    },
+    "chips": ["Call Support", "Emergency", "Cancel"]
+  },
+  {
+    "id": "del_prefs",
+    "keywords": ["delivery instructions", "gate code", "leave at door"],
+    "response": "Update your delivery preferences.",
+    "artifact": {
+      "type": "delivery-prefs",
+      "data": { "leaveAtDoor": true, "callOnArrival": false, "gateCode": "", "instructions": "" }
+    },
+    "chips": ["Save", "Contact Driver"]
+  },
+  {
+    "id": "return_item",
+    "keywords": ["return order", "refund", "send back"],
+    "response": "Start your return process.",
+    "artifact": {
+      "type": "return-manager",
+      "data": { 
+        "orderId": "ORD-9921",
+        "items": [
+          { "id": "i1", "name": "Wireless Headphones", "variant": "Black", "price": "$129.00", "image": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&q=80&w=200" },
+          { "id": "i2", "name": "USB-C Cable", "variant": "2m Braided", "price": "$12.00", "image": "https://images.unsplash.com/photo-1761497715258-d144090c6d02?auto=format&fit=crop&q=80&w=200" }
+        ]
+      }
+    },
+    "chips": ["Generate Label", "Policy", "Help"]
+  },
+  {
+    "id": "find_locker",
+    "keywords": ["locker", "pickup point", "pudo", "collection point"],
+    "response": "Lockers available near you.",
+    "artifact": {
+      "type": "smart-locker",
+      "data": { 
+        "lockers": [
+          { "id": "l1", "name": "Locker Station 01", "distance": "0.3 km", "address": "Metro Station Exit A", "status": "Available" },
+          { "id": "l2", "name": "Mall Box", "distance": "1.2 km", "address": "Central Mall, L1", "status": "Full" },
+          { "id": "l3", "name": "Gas Stop Box", "distance": "2.5 km", "address": "Shell Station", "status": "Available" }
+        ]
+      }
+    },
+    "chips": ["Reserve", "Navigate", "Info"]
+  },
+  {
+    "id": "driver_earnings",
+    "keywords": ["my earnings", "driver stats", "how much i made"],
+    "response": "Your daily performance summary.",
+    "artifact": {
+      "type": "driver-stats",
+      "data": { 
+        "earnings": "$142.50",
+        "trips": 12,
+        "hours": 6.5,
+        "rating": 4.9,
+        "driverImage": "https://images.unsplash.com/photo-1659353220597-71b8c6a56259?auto=format&fit=crop&q=80&w=200"
+      }
+    },
+    "chips": ["Cash Out", "Trip History", "Go Offline"]
+  }
+]

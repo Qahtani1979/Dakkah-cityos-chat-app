@@ -1,0 +1,165 @@
+[
+  {
+    "id": "coworking",
+    "keywords": ["coworking", "office", "work", "desk", "wifi"],
+    "response": "Great places to work remotely.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "cw1", "name": "Code Hub", "category": "Coworking", "image": "office", "rating": 4.8, "distance": "2.0 km", "vibe": ["#tech", "#quiet"], "priceRange": "$$", "openNow": true },
+          { "id": "cw2", "name": "The Space", "category": "Shared Office", "image": "office", "rating": 4.7, "distance": "3.5 km", "vibe": ["#creative", "#coffee"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Day Pass", "Book Room", "Amenities"]
+  },
+  {
+    "id": "meeting_rooms",
+    "keywords": ["meeting", "room", "conference", "boardroom"],
+    "response": "Professional spaces for your meetings.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "mr1", "name": "KAFD Conference Ctr", "category": "Business Center", "image": "office", "rating": 4.9, "distance": "1.0 km", "vibe": ["#premium", "#views"], "priceRange": "$$$$", "openNow": true },
+          { "id": "mr2", "name": "Servcorp", "category": "Meeting Rooms", "image": "office", "rating": 4.6, "distance": "5.0 km", "vibe": ["#professional", "#admin"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Book Hourly", "Video Conf", "Catering"]
+  },
+  {
+    "id": "printing",
+    "keywords": ["print", "copy", "scan", "documents"],
+    "response": "Print shops nearby.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "pr1", "name": "Print Master", "category": "Print Shop", "image": "office", "rating": 4.5, "distance": "0.5 km", "vibe": ["#quick", "#cheap"], "priceRange": "$", "openNow": true },
+          { "id": "pr2", "name": "Creative Prints", "category": "Design & Print", "image": "office", "rating": 4.8, "distance": "1.2 km", "vibe": ["#quality", "#binding"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Upload File", "Prices", "Services"]
+  },
+  {
+    "id": "networking",
+    "keywords": ["networking", "business", "event", "startup"],
+    "response": "Connect with professionals.",
+    "artifact": {
+      "type": "event-carousel",
+      "data": {
+        "title": "Networking Events",
+        "events": [
+          { "id": "net1", "name": "Startup Grind", "date": "Thu, 6pm", "time": "18:00", "location": "Code Hub", "image": "https://images.unsplash.com/photo-1511632765486-a01980968a0c?auto=format&fit=crop&q=80&w=400", "category": "Business", "attendees": 60 },
+          { "id": "net2", "name": "Women in Tech", "date": "Sun, 5pm", "time": "17:00", "location": "The Space", "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=400", "category": "Tech", "attendees": 40 }
+        ]
+      }
+    },
+    "chips": ["RSVP", "Guest List", "Agenda"]
+  },
+  {
+    "id": "freelancer",
+    "keywords": ["hire", "freelancer", "developer", "contractor"],
+    "response": "Top rated freelancer profile.",
+    "artifact": {
+      "type": "freelancer-card",
+      "data": { 
+        "name": "Alex Morgan", 
+        "rate": "$80/hr", 
+        "skills": ["React", "Node.js", "UI/UX"], 
+        "available": true,
+        "avatar": "https://images.unsplash.com/photo-1659353220597-71b8c6a56259?auto=format&fit=crop&q=80&w=200"
+      }
+    },
+    "chips": ["Hire", "Message", "Portfolio"]
+  },
+  {
+    "id": "billable_hours",
+    "keywords": ["timer", "track time", "consultation", "billing"],
+    "response": "Consultation timer active.",
+    "artifact": {
+      "type": "consultation-timer",
+      "data": { "duration": "30:00", "remaining": "14:20", "client": "Client A" }
+    },
+    "chips": ["Pause", "Stop & Bill", "Notes"]
+  },
+  {
+    "id": "scan_doc",
+    "keywords": ["scan", "ocr", "document", "digitize"],
+    "response": "Document scanner ready.",
+    "artifact": {
+      "type": "doc-scanner",
+      "data": { "status": "Scanning...", "progress": 40, "fileName": "Contract_v2.pdf" }
+    },
+    "chips": ["Save PDF", "Retake", "Email"]
+  },
+  {
+    "id": "sprint_tasks",
+    "keywords": ["checklist", "tasks", "todo", "sprint"],
+    "response": "Project task list.",
+    "artifact": {
+      "type": "task-checklist",
+      "data": { "tasks": [{ "id": "t1", "text": "Review Design", "done": true }, { "id": "t2", "text": "Push Code", "done": false }] }
+    },
+    "chips": ["Add Task", "Assign", "Due Dates"]
+  },
+  {
+    "id": "onboarding",
+    "keywords": ["hr", "onboarding", "new hire", "employee"],
+    "response": "Onboarding progress tracker.",
+    "artifact": {
+      "type": "hr-onboarding",
+      "data": { "step": "Documents", "progress": 30, "nextTask": "Upload ID" }
+    },
+    "chips": ["Upload", "Contact HR", "Handbook"]
+  },
+  {
+    "id": "office_screen",
+    "keywords": ["signage", "display", "screen", "office tv"],
+    "response": "Digital signage preview.",
+    "artifact": {
+      "type": "digital-signage",
+      "data": { 
+        "active": true, 
+        "campaign": "Summer Sale", 
+        "subtext": "Q4 Strategic Summit 2024",
+        "screenId": "Lobby-01",
+        "image": "https://images.unsplash.com/photo-1691829118326-0c426c517ded?auto=format&fit=crop&q=80&w=600"
+      }
+    },
+    "chips": ["Change Content", "Schedule", "Turn Off"]
+  },
+  {
+    "id": "asset_track",
+    "keywords": ["asset", "inventory", "laptop", "equipment"],
+    "response": "Asset tracking details.",
+    "artifact": {
+      "type": "asset-tracker",
+      "data": { "id": "LPT-009", "user": "Jane Doe", "location": "Office", "type": "Laptop" }
+    },
+    "chips": ["Transfer", "Report Lost", "History"]
+  },
+  {
+    "id": "file_share",
+    "keywords": ["file", "pdf", "download", "attachment"],
+    "response": "Here is the document.",
+    "artifact": {
+      "type": "document-card",
+      "data": { "name": "Project_Proposal.pdf", "size": "2.5MB", "type": "PDF" }
+    },
+    "chips": ["Download", "Preview", "Share"]
+  },
+  {
+    "id": "goal_progress",
+    "keywords": ["progress", "goal", "target", "achievement"],
+    "response": "Weekly goal progress.",
+    "artifact": {
+      "type": "progress-card",
+      "data": { "title": "Weekly Goal", "current": 75, "target": 100, "unit": "%" }
+    },
+    "chips": ["Update", "Details", "Share"]
+  }
+]

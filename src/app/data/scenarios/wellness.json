@@ -1,0 +1,49 @@
+[
+  {
+    "id": "yoga",
+    "keywords": ["yoga", "pilates", "meditation", "mindfulness", "stretch"],
+    "response": "Find your center at these studios.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "y1", "name": "Zen Space", "category": "Yoga Studio", "image": "yoga", "rating": 4.9, "distance": "2.0 km", "vibe": ["#calm", "#vinyasa"], "priceRange": "$$", "openNow": true },
+          { "id": "y2", "name": "Core Pilates", "category": "Pilates", "image": "yoga", "rating": 4.8, "distance": "3.5 km", "vibe": ["#reformer", "#strength"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Book Class", "Schedule", "Instructor Bios"]
+  },
+  {
+    "id": "mental_wellness",
+    "keywords": ["therapy", "counseling", "psychologist", "mental health", "therapist"],
+    "response": "Compassionate care and support.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "mw1", "name": "Mindful Care", "category": "Wellness Center", "image": "office", "rating": 4.9, "distance": "5.0 km", "vibe": ["#private", "#holistic"], "priceRange": "$$$", "openNow": true },
+          { "id": "mw2", "name": "The Counseling Hub", "category": "Clinic", "image": "office", "rating": 4.8, "distance": "3.2 km", "vibe": ["#support", "#groups"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Book Consultation", "Specialties", "Insurance"]
+  },
+  {
+    "id": "nutrition",
+    "keywords": ["nutritionist", "dietitian", "diet", "healthy eating", "meal plan"],
+    "response": "Expert advice for a healthier you.",
+    "artifact": {
+      "type": "service-menu",
+      "data": {
+        "title": "Nutrition Services",
+        "items": [
+          { "id": "n1", "name": "Initial Consultation", "description": "60 min assessment & goal setting.", "duration": "1h", "price": "SAR 300" },
+          { "id": "n2", "name": "Meal Planning", "description": "Customized weekly meal plans.", "duration": "1 week", "price": "SAR 250" },
+          { "id": "n3", "name": "Follow-up", "description": "Progress check and adjustments.", "duration": "30m", "price": "SAR 150" }
+        ]
+      }
+    },
+    "chips": ["Book Now", "View Packages", "Meet Team"]
+  }
+]

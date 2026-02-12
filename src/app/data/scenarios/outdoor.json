@@ -1,0 +1,112 @@
+[
+  {
+    "id": "hiking",
+    "keywords": ["hike", "trail", "trek", "mountain", "climb"],
+    "response": "Explore the outdoors.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "hk1", "name": "Edge of the World", "category": "Hiking Trail", "image": "hiking-trail", "rating": 4.9, "distance": "90 km", "vibe": ["#views", "#iconic"], "priceRange": "Free", "openNow": true },
+          { "id": "hk2", "name": "Wadi Hanifa Trail", "category": "Walking Trail", "image": "hiking-trail", "rating": 4.7, "distance": "15 km", "vibe": ["#nature", "#easy"], "priceRange": "Free", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Map", "Guide", "Safety Tips"]
+  },
+  {
+    "id": "camping",
+    "keywords": ["camp", "tent", "desert", "fire", "stars"],
+    "response": "Under the stars.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "cmp1", "name": "Red Sand Dunes", "category": "Camping Site", "image": "hiking-trail", "rating": 4.8, "distance": "40 km", "vibe": ["#sand", "#adventure"], "priceRange": "Free", "openNow": true },
+          { "id": "cmp2", "name": "Thumamah Park", "category": "Desert Park", "image": "hiking-trail", "rating": 4.5, "distance": "30 km", "vibe": ["#family", "#BBQ"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Rent Gear", "Directions", "Permits"]
+  },
+  {
+    "id": "parks",
+    "keywords": ["park", "green", "picnic", "grass"],
+    "response": "Green spaces in the city.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "prk1", "name": "King Abdullah Park", "category": "Public Park", "image": "hiking-trail", "rating": 4.7, "distance": "5.0 km", "vibe": ["#fountains", "#huge"], "priceRange": "$", "openNow": true },
+          { "id": "prk2", "name": "Olaya Park", "category": "Park", "image": "hiking-trail", "rating": 4.5, "distance": "2.0 km", "vibe": ["#central", "#walking"], "priceRange": "Free", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Events", "Map", "Hours"]
+  },
+  {
+    "id": "golf",
+    "keywords": ["golf", "course", "club", "putting"],
+    "response": "Tee off.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "glf1", "name": "Riyadh Golf Club", "category": "Golf Course", "image": "hiking-trail", "rating": 4.8, "distance": "20 km", "vibe": ["#championship", "#green"], "priceRange": "$$$$", "openNow": true },
+          { "id": "glf2", "name": "Intercon Palms", "category": "Golf Course", "image": "hiking-trail", "rating": 4.6, "distance": "5.0 km", "vibe": ["#resort", "#9-hole"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Book Tee Time", "Rates", "Membership"]
+  },
+  {
+    "id": "cycling",
+    "keywords": ["cycle", "bike", "ride", "pedal"],
+    "response": "Cycling routes and tracks.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "cy1", "name": "Diplomatic Quarter", "category": "Cycling Path", "image": "hiking-trail", "rating": 4.9, "distance": "8.0 km", "vibe": ["#scenic", "#safe"], "priceRange": "Free", "openNow": true },
+          { "id": "cy2", "name": "Wadi Hanifa Track", "category": "Off-road Track", "image": "hiking-trail", "rating": 4.7, "distance": "12.0 km", "vibe": ["#nature", "#long"], "priceRange": "Free", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Rent Bike", "Map", "Groups"]
+  },
+  {
+    "id": "cattle_monitor",
+    "keywords": ["cow", "livestock", "herd", "animal health"],
+    "response": "Livestock health status.",
+    "artifact": {
+      "type": "livestock-tracker",
+      "data": { "id": "Cow-101", "health": "Good", "location": "Pasture A", "temp": 38.5 }
+    },
+    "chips": ["Vet Call", "History", "Locate"]
+  },
+  {
+    "id": "crop_health",
+    "keywords": ["crop", "field", "moisture", "harvest"],
+    "response": "Field moisture analysis.",
+    "artifact": {
+      "type": "crop-map",
+      "data": { "moisture": 60, "temp": 24, "health": "Optimal", "area": "Field B" }
+    },
+    "chips": ["Irrigate", "Drone View", "Report"]
+  },
+  {
+    "id": "carbon_offset",
+    "keywords": ["carbon", "credits", "sustainability", "green"],
+    "response": "Carbon credit portfolio.",
+    "artifact": {
+      "type": "carbon-credit",
+      "data": { 
+        "credits": 150, 
+        "value": "$4,500", 
+        "verified": true,
+        "image": "https://images.unsplash.com/photo-1697350978674-4b40261b0dc3?auto=format&fit=crop&q=80&w=600"
+      }
+    },
+    "chips": ["Sell", "Buy More", "Certificates"]
+  }
+]

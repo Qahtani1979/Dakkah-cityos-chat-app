@@ -1,0 +1,146 @@
+[
+  {
+    "id": "traffic",
+    "keywords": ["traffic", "congestion", "jam", "drive"],
+    "response": "Here is the current traffic situation.",
+    "artifact": {
+      "type": "analytics-snapshot",
+      "data": {
+        "title": "Traffic Overview",
+        "metrics": [
+          { "label": "King Fahad Rd", "value": "Heavy", "trend": "down", "trendValue": "+25m" },
+          { "label": "Olaya St", "value": "Moderate", "trend": "neutral", "trendValue": "+10m" },
+          { "label": "Northern Ring", "value": "Clear", "trend": "up", "trendValue": "Green" }
+        ],
+        "chartImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+      }
+    },
+    "chips": ["Avoid Highways", "Navigate Home", "Report Incident"]
+  },
+  {
+    "id": "weather",
+    "keywords": ["weather", "forecast", "rain", "temperature", "hot", "cold"],
+    "response": "Here is the forecast for today.",
+    "artifact": {
+      "type": "analytics-snapshot",
+      "data": {
+        "title": "Weather",
+        "metrics": [
+          { "label": "Current", "value": "34°C", "trend": "neutral", "trendValue": "Sunny" },
+          { "label": "Humidity", "value": "15%", "trend": "neutral", "trendValue": "Dry" },
+          { "label": "Wind", "value": "12 km/h", "trend": "up", "trendValue": "North" }
+        ],
+        "chartImage": "https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&q=80&w=400"
+      }
+    },
+    "chips": ["Weekly Forecast", "Air Quality", "UV Index"]
+  },
+  {
+    "id": "air_quality",
+    "keywords": ["air quality", "aqi", "pollution", "dust"],
+    "response": "Air quality levels in your area.",
+    "artifact": {
+      "type": "analytics-snapshot",
+      "data": {
+        "title": "Air Quality Index",
+        "metrics": [
+          { "label": "AQI", "value": "45", "trend": "up", "trendValue": "Good" },
+          { "label": "PM2.5", "value": "12", "trend": "neutral", "trendValue": "Normal" },
+          { "label": "Pollen", "value": "Low", "trend": "up", "trendValue": "Clear" }
+        ]
+      }
+    },
+    "chips": ["Health Advice", "Map", "Details"]
+  },
+  {
+    "id": "wifi_map",
+    "keywords": ["wifi", "internet", "hotspot", "connection"],
+    "response": "Finding free WiFi spots.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "wf1", "name": "Public Library", "category": "Free WiFi", "image": "office", "rating": 4.8, "distance": "1.0 km", "vibe": ["#fast", "#quiet"], "priceRange": "Free", "openNow": true },
+          { "id": "wf2", "name": "Starbucks Reserve", "category": "Cafe WiFi", "image": "coffee-shop", "rating": 4.6, "distance": "0.5 km", "vibe": ["#reliable", "#power"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Speed Test", "Navigate", "Report"]
+  },
+  {
+    "id": "prayer_times",
+    "keywords": ["prayer", "salah", "azan", "mosque"],
+    "response": "Prayer times for today.",
+    "artifact": {
+      "type": "analytics-snapshot",
+      "data": {
+        "title": "Prayer Times",
+        "metrics": [
+          { "label": "Fajr", "value": "04:15", "trend": "neutral", "trendValue": "AM" },
+          { "label": "Dhuhr", "value": "11:55", "trend": "neutral", "trendValue": "AM" },
+          { "label": "Asr", "value": "15:20", "trend": "neutral", "trendValue": "PM" },
+          { "label": "Maghrib", "value": "18:05", "trend": "neutral", "trendValue": "PM" },
+          { "label": "Isha", "value": "19:35", "trend": "neutral", "trendValue": "PM" }
+        ]
+      }
+    },
+    "chips": ["Find Mosque", "Qibla Direction", "Settings"]
+  },
+  {
+    "id": "currency",
+    "keywords": ["currency", "exchange", "rate", "dollar", "sar"],
+    "response": "Current exchange rates.",
+    "artifact": {
+      "type": "analytics-snapshot",
+      "data": {
+        "title": "Currency Exchange",
+        "metrics": [
+          { "label": "USD", "value": "3.75", "trend": "neutral", "trendValue": "SAR" },
+          { "label": "EUR", "value": "4.10", "trend": "up", "trendValue": "SAR" },
+          { "label": "GBP", "value": "4.80", "trend": "down", "trendValue": "SAR" }
+        ]
+      }
+    },
+    "chips": ["Converter", "History", "Banks"]
+  },
+  {
+    "id": "energy_usage",
+    "keywords": ["energy", "electricity", "consumption", "power bill"],
+    "response": "Your energy usage trends.",
+    "artifact": {
+      "type": "energy-graph",
+      "data": { "usage": [10, 20, 15, 30, 25, 10, 5], "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] }
+    },
+    "chips": ["Save Energy", "Compare", "Export"]
+  },
+  {
+    "id": "power_outage",
+    "keywords": ["outage", "blackout", "no power", "grid status"],
+    "response": "Outage map for your area.",
+    "artifact": {
+      "type": "outage-map",
+      "data": { "outages": 3, "affected": 120, "estimatedFix": "2h 30m" }
+    },
+    "chips": ["Report", "Updates", "Safety"]
+  },
+  {
+    "id": "pay_utility",
+    "keywords": ["pay bill", "utility bill", "electric bill", "water bill"],
+    "response": "Utility bill payment.",
+    "artifact": {
+      "type": "bill-pay",
+      "data": { "provider": "Electric Co", "amount": "$120.50", "due": "2025-01-15" }
+    },
+    "chips": ["Pay Now", "Auto-Pay", "History"]
+  },
+  {
+    "id": "weather_simple",
+    "keywords": ["temp", "degrees", "hot", "sunny"],
+    "response": "Current conditions.",
+    "artifact": {
+      "type": "weather-card",
+      "data": { "temp": 28, "condition": "Sunny", "location": "Riyadh", "humidity": "20%" }
+    },
+    "chips": ["Hourly", "Radar", "Wind"]
+  }
+]

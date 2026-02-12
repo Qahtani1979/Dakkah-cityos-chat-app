@@ -1,0 +1,90 @@
+[
+  {
+    "id": "weekend_trip",
+    "keywords": ["weekend", "trip", "getaway", "travel"],
+    "response": "Here is a suggested weekend itinerary.",
+    "artifact": {
+      "type": "itinerary-timeline",
+      "data": {
+        "title": "Weekend in Al Ula",
+        "blocks": [
+           { "id": "b1", "time": "09:00", "title": "Flight to Al Ula", "location": "RUH -> ULH", "duration": "1h 45m", "type": "transit" },
+           { "id": "b2", "time": "12:00", "title": "Check-in at Habitas", "location": "Habitas Resort", "duration": "1h", "type": "rest" },
+           { "id": "b3", "time": "15:00", "title": "Hegra Tour", "location": "Hegra Heritage Site", "duration": "3h", "type": "experience" },
+           { "id": "b4", "time": "20:00", "title": "Dinner at Maraya", "location": "Maraya Social", "duration": "2h", "type": "meal" }
+        ]
+      }
+    },
+    "chips": ["Book All", "Edit Plan", "Share"]
+  },
+  {
+    "id": "date_night",
+    "keywords": ["date", "romantic", "dinner plan", "couple"],
+    "response": "A romantic evening planned for you.",
+    "artifact": {
+      "type": "itinerary-timeline",
+      "data": {
+        "title": "Date Night",
+        "blocks": [
+           { "id": "d1", "time": "19:00", "title": "Dinner at LPM", "location": "LPM Restaurant", "duration": "2h", "type": "meal", "notes": "Table requested in garden." },
+           { "id": "d2", "time": "21:30", "title": "Jazz at The Globe", "location": "The Globe Lounge", "duration": "1h 30m", "type": "experience", "notes": "Live jazz starts at 9:30." }
+        ]
+      }
+    },
+    "chips": ["Reserve Both", "Change Venue", "Add Flowers"]
+  },
+  {
+    "id": "group_outing",
+    "keywords": ["group", "friends", "hangout", "activity"],
+    "response": "Fun plan for the squad.",
+    "artifact": {
+      "type": "itinerary-timeline",
+      "data": {
+        "title": "Saturday Squad Day",
+        "blocks": [
+           { "id": "g1", "time": "14:00", "title": "Padel Match", "location": "Padel Rush", "duration": "1h 30m", "type": "experience" },
+           { "id": "g2", "time": "16:00", "title": "Coffee Break", "location": "Brew Crew", "duration": "45m", "type": "rest" },
+           { "id": "g3", "time": "18:00", "title": "Burger Dinner", "location": "Section-B", "duration": "1h 30m", "type": "meal" }
+        ]
+      }
+    },
+    "chips": ["Invite Friends", "Split Bill", "Vote"]
+  },
+  {
+    "id": "budget_day",
+    "keywords": ["budget", "cheap", "low cost", "free"],
+    "response": "Enjoy Riyadh for less than SAR 50.",
+    "artifact": {
+      "type": "itinerary-timeline",
+      "data": {
+        "title": "Budget Day Out",
+        "blocks": [
+           { "id": "bu1", "time": "10:00", "title": "National Museum", "location": "Murabba", "duration": "2h", "type": "experience", "notes": "Ticket: SAR 10" },
+           { "id": "bu2", "time": "12:30", "title": "Picnic Lunch", "location": "Wadi Hanifa", "duration": "1h 30m", "type": "meal", "notes": "Pack your own: SAR 20" },
+           { "id": "bu3", "time": "16:00", "title": "Sunset Walk", "location": "DQ Trails", "duration": "1h", "type": "experience", "notes": "Free" }
+        ]
+      }
+    },
+    "chips": ["Save Plan", "Directions", "Details"]
+  },
+  {
+    "id": "concierge_request",
+    "keywords": ["hotel", "room service", "checkout", "concierge"],
+    "response": "Concierge request updated.",
+    "artifact": {
+      "type": "hotel-concierge",
+      "data": { "request": "Late Checkout", "status": "Approved", "room": "304" }
+    },
+    "chips": ["Message", "New Request", "Services"]
+  },
+  {
+    "id": "date_picker",
+    "keywords": ["calendar", "date", "schedule", "pick date"],
+    "response": "Select a date.",
+    "artifact": {
+      "type": "calendar-selector",
+      "data": { "selected": "2025-10-15T00:00:00.000Z" }
+    },
+    "chips": ["Confirm", "Today", "Clear"]
+  }
+]

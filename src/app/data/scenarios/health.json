@@ -1,0 +1,83 @@
+[
+  {
+    "id": "gyms",
+    "keywords": ["gym", "fitness", "workout", "training", "weights"],
+    "response": "Here are some great gyms nearby.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "g1", "name": "Fitness Time", "category": "Gym", "image": "gym", "rating": 4.6, "distance": "1.2 km", "vibe": ["#equipped", "#pool"], "priceRange": "$$", "openNow": true },
+          { "id": "g2", "name": "Pure Gym", "category": "Fitness Center", "image": "gym", "rating": 4.5, "distance": "2.5 km", "vibe": ["#24h", "#classes"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Day Pass", "Membership", "Classes"]
+  },
+  {
+    "id": "sports_leagues",
+    "keywords": ["sports", "league", "football", "basketball", "team"],
+    "response": "Join a team or find a match.",
+    "artifact": {
+      "type": "event-carousel",
+      "data": {
+        "title": "Local Leagues",
+        "events": [
+          { "id": "sl1", "name": "Weekend Football", "date": "Every Fri", "time": "18:00", "location": "KAFD Pitch", "image": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&q=80&w=400", "category": "Football", "attendees": 22 },
+          { "id": "sl2", "name": "Basketball Pickup", "date": "Wednesdays", "time": "19:30", "location": "City Court", "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&q=80&w=400", "category": "Basketball", "attendees": 10 }
+        ]
+      }
+    },
+    "chips": ["Sign Up", "Venues", "Rules"]
+  },
+  {
+    "id": "swimming",
+    "keywords": ["swim", "pool", "aquatic", "swimming"],
+    "response": "Dive in.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "sw1", "name": "Olympic Center", "category": "Aquatic Center", "image": "gym", "rating": 4.8, "distance": "5.0 km", "vibe": ["#lanes", "#training"], "priceRange": "$$", "openNow": true },
+          { "id": "sw2", "name": "Community Pool", "category": "Public Pool", "image": "gym", "rating": 4.3, "distance": "1.5 km", "vibe": ["#family", "#fun"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Lane Schedule", "Lessons", "Pricing"]
+  },
+  {
+    "id": "martial_arts",
+    "keywords": ["martial arts", "karate", "judo", "mma", "boxing"],
+    "response": "Train with the best.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "ma1", "name": "Fight Club", "category": "MMA Gym", "image": "gym", "rating": 4.9, "distance": "3.0 km", "vibe": ["#intense", "#pro"], "priceRange": "$$$", "openNow": true },
+          { "id": "ma2", "name": "Dojo One", "category": "Karate School", "image": "gym", "rating": 4.7, "distance": "2.0 km", "vibe": ["#discipline", "#kids"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Free Trial", "Schedule", "Instructors"]
+  },
+  {
+    "id": "symptom_check",
+    "keywords": ["symptoms", "sick", "doctor ai", "diagnosis"],
+    "response": "Based on your symptoms...",
+    "artifact": {
+      "type": "symptom-triage",
+      "data": { "symptoms": ["Headache", "Fever", "Fatigue"], "severity": "Moderate" }
+    },
+    "chips": ["Find Doctor", "Telehealth", "Self Care"]
+  },
+  {
+    "id": "daily_vitals",
+    "keywords": ["steps", "heart rate", "sleep", "health stats"],
+    "response": "Your daily health snapshot.",
+    "artifact": {
+      "type": "health-snapshot",
+      "data": { "steps": 8432, "sleep": "7h 12m", "heartRate": "72 bpm" }
+    },
+    "chips": ["Details", "History", "Sync"]
+  }
+]

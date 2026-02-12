@@ -1,0 +1,230 @@
+[
+  {
+    "id": "flights",
+    "keywords": ["flight", "airport", "plane", "departure", "arrival", "terminal"],
+    "response": "Here are the upcoming departures from RUH.",
+    "artifact": {
+      "type": "analytics-snapshot",
+      "data": {
+        "title": "Flight Status (RUH)",
+        "metrics": [
+          { "label": "SV 102", "value": "On Time", "trend": "neutral", "trendValue": "Dep 14:00" },
+          { "label": "BA 262", "value": "Delayed", "trend": "down", "trendValue": "+45m" },
+          { "label": "EK 819", "value": "Boarding", "trend": "up", "trendValue": "Gate 12" },
+          { "label": "XY 440", "value": "Arrived", "trend": "neutral", "trendValue": "Belt 4" }
+        ]
+      }
+    },
+    "chips": ["Book Flight", "Airport Map", "Parking Info"]
+  },
+  {
+    "id": "rideshare",
+    "keywords": ["taxi", "uber", "careem", "ride", "lift"],
+    "response": "Finding rides near you...",
+    "artifact": {
+      "type": "service-menu",
+      "data": {
+        "title": "Ride Options",
+        "items": [
+          { "id": "r1", "name": "Standard", "description": "Arrives in 4 mins.", "duration": "15 min trip", "price": "SAR 25" },
+          { "id": "r2", "name": "Premium", "description": "Luxury sedan.", "duration": "15 min trip", "price": "SAR 45" },
+          { "id": "r3", "name": "XL", "description": "Van for 6 people.", "duration": "18 min trip", "price": "SAR 60" }
+        ]
+      }
+    },
+    "chips": ["Confirm Standard", "Schedule for Later", "Payment Method"]
+  },
+  {
+    "id": "metro",
+    "keywords": ["metro", "train", "station", "subway"],
+    "response": "Nearest metro stations and times.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+           { "id": "mt1", "name": "KAFD Station", "category": "Metro", "image": "metro", "rating": 4.8, "distance": "0.5 km", "vibe": ["#hub", "#modern"], "priceRange": "$", "openNow": true },
+           { "id": "mt2", "name": "Olaya Station", "category": "Metro", "image": "metro", "rating": 4.6, "distance": "2.1 km", "vibe": ["#central"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["View Map", "Get Ticket", "Schedules"]
+  },
+  {
+    "id": "parking",
+    "keywords": ["parking", "garage", "lot", "park"],
+    "response": "Here are the available parking spots nearby.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+           { "id": "pk1", "name": "Central Plaza Parking", "category": "Parking Garage", "image": "parking", "rating": 4.2, "distance": "0.2 km", "vibe": ["#covered", "#secure"], "priceRange": "$$", "openNow": true },
+           { "id": "pk2", "name": "Street Parking Zone A", "category": "Street Parking", "image": "parking", "rating": 3.8, "distance": "0.1 km", "vibe": ["#metered"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Navigate", "Pay Parking", "Rates"]
+  },
+  {
+    "id": "gas_station",
+    "keywords": ["gas", "fuel", "petrol", "station", "diesel"],
+    "response": "Nearest refueling stations.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "gs1", "name": "Sasco", "category": "Gas Station", "image": "garage", "rating": 4.5, "distance": "1.0 km", "vibe": ["#24h", "#store"], "priceRange": "$", "openNow": true },
+          { "id": "gs2", "name": "Aldrees", "category": "Gas Station", "image": "garage", "rating": 4.3, "distance": "2.5 km", "vibe": ["#service", "#carwash"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Navigate", "Prices", "Services"]
+  },
+  {
+    "id": "ev_charging",
+    "keywords": ["ev", "electric", "charge", "tesla", "charging station"],
+    "response": "Finding EV chargers...",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "ev1", "name": "KAFD Supercharger", "category": "EV Charging", "image": "garage", "rating": 4.9, "distance": "0.5 km", "vibe": ["#fast", "#tesla"], "priceRange": "$$", "openNow": true },
+          { "id": "ev2", "name": "Mall Charger", "category": "Charging Point", "image": "garage", "rating": 4.0, "distance": "3.0 km", "vibe": ["#slow", "#free"], "priceRange": "free", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Check Availability", "Navigate", "Plug Type"]
+  },
+  {
+    "id": "bike_rental",
+    "keywords": ["bike", "cycle", "rental", "bicycle"],
+    "response": "Rent a bike and ride.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "bk1", "name": "City Bike Hub", "category": "Bike Rental", "image": "hiking-trail", "rating": 4.7, "distance": "1.2 km", "vibe": ["#hourly", "#manual"], "priceRange": "$", "openNow": true },
+          { "id": "bk2", "name": "E-Bike Station", "category": "Electric Bikes", "image": "hiking-trail", "rating": 4.8, "distance": "2.0 km", "vibe": ["#electric", "#app"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Unlock", "Pricing", "Routes"]
+  },
+  {
+    "id": "scooters",
+    "keywords": ["scooter", "bird", "lime", "electric scooter"],
+    "response": "Scooters available nearby.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "sc1", "name": "Lime Zone A", "category": "Scooter Hub", "image": "hiking-trail", "rating": 4.5, "distance": "0.1 km", "vibe": ["#available", "#charged"], "priceRange": "$", "openNow": true },
+          { "id": "sc2", "name": "Bird Nest", "category": "Scooter Hub", "image": "hiking-trail", "rating": 4.4, "distance": "0.4 km", "vibe": ["#nearby"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Scan to Ride", "Battery Level", "Safety"]
+  },
+  {
+    "id": "car_rental",
+    "keywords": ["rent car", "car rental", "vehicle rental"],
+    "response": "Need a car? Here are the agencies.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "cr1", "name": "Budget", "category": "Car Rental", "image": "garage", "rating": 4.2, "distance": "5.0 km", "vibe": ["#economy"], "priceRange": "$$", "openNow": true },
+          { "id": "cr2", "name": "Sixt", "category": "Car Rental", "image": "garage", "rating": 4.6, "distance": "4.5 km", "vibe": ["#luxury"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Book Now", "View Fleet", "Insurance"]
+  },
+  {
+    "id": "ev_charge_status",
+    "keywords": ["charging status", "battery", "charge level"],
+    "response": "EV charging monitor.",
+    "artifact": {
+      "type": "ev-status",
+      "data": { "charge": 85, "range": "320 km", "charging": true, "station": "Tesla Supercharger" }
+    },
+    "chips": ["Stop Charge", "Unlock Port", "Settings"]
+  },
+  {
+    "id": "car_remote",
+    "keywords": ["lock car", "start engine", "unlock car", "remote"],
+    "response": "Vehicle remote control.",
+    "artifact": {
+      "type": "vehicle-remote",
+      "data": { 
+        "locked": true, 
+        "engine": false, 
+        "temp": 22, 
+        "location": "Garage", 
+        "licensePlate": "KSA-992",
+        "model": "Tesla Model 3",
+        "image": "https://images.unsplash.com/photo-1636057915127-05a1c49c45ea?auto=format&fit=crop&q=80&w=200"
+      }
+    },
+    "chips": ["Unlock", "Start AC", "Find Car"]
+  },
+  {
+    "id": "toll_road",
+    "keywords": ["toll", "salik", "road toll", "balance"],
+    "response": "Toll pass account.",
+    "artifact": {
+      "type": "toll-pass",
+      "data": { "balance": "$45.50", "lastTrip": "-$2.50", "route": "M1 Highway" }
+    },
+    "chips": ["Top Up", "History", "Auto-Pay"]
+  },
+  {
+    "id": "boarding",
+    "keywords": ["boarding pass", "ticket", "check in", "flight pass"],
+    "response": "Your boarding pass is ready.",
+    "artifact": {
+      "type": "boarding-pass",
+      "data": { "flight": "SA123", "seat": "4A", "gate": "B2", "time": "14:30", "from": "RUH", "to": "DXB", "passenger": "Fahad Al-Saud" }
+    },
+    "chips": ["Apple Wallet", "Gate Info", "Share"]
+  },
+  {
+    "id": "currency_conv",
+    "keywords": ["convert", "exchange rate", "calculate currency"],
+    "response": "Currency converter.",
+    "artifact": {
+      "type": "currency-converter",
+      "data": { "from": "USD", "to": "SAR", "rate": 3.75, "amount": 100 }
+    },
+    "chips": ["Swap", "Set Alert", "Table"]
+  },
+  {
+    "id": "ride_active",
+    "keywords": ["driver status", "eta", "car plate", "ride"],
+    "response": "Driver is on the way.",
+    "artifact": {
+      "type": "ride-status",
+      "data": { "driver": "Mike", "car": "Tesla Model 3", "plate": "ABC-123", "eta": "4 min", "rating": 4.9 }
+    },
+    "chips": ["Call Driver", "Cancel Ride", "Share ETA"]
+  },
+  {
+    "id": "city_map",
+    "keywords": ["map", "location", "navigate", "directions"],
+    "response": "Here is the map view.",
+    "artifact": {
+      "type": "map-view",
+      "data": { "center": { "lat": 24.7136, "lng": 46.6753 }, "zoom": 12 }
+    },
+    "chips": ["Satellite", "Traffic", "Nearby"]
+  },
+  {
+    "id": "parking_time",
+    "keywords": ["parking meter", "time remaining", "expire"],
+    "response": "Parking session status.",
+    "artifact": {
+      "type": "parking-meter",
+      "data": { "expires": "14:30", "location": "Zone A - Downtown", "cost": "$4.00" }
+    },
+    "chips": ["Extend", "Stop", "Find Car"]
+  }
+]

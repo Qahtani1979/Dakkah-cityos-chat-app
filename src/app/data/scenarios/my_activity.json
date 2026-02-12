@@ -1,0 +1,71 @@
+[
+  {
+    "id": "track_order",
+    "keywords": ["track", "order", "delivery", "status"],
+    "response": "Here is your active order.",
+    "artifact": {
+      "type": "order-tracker",
+      "data": {
+        "id": "ord-123",
+        "orderNumber": "#9921",
+        "status": "on-the-way",
+        "items": ["Spicy Tuna Roll", "Edamame", "Coke Zero"],
+        "total": "SAR 85.00",
+        "estimatedTime": "12 mins"
+      }
+    },
+    "chips": ["Call Driver", "Cancel", "Support"]
+  },
+  {
+    "id": "my_tickets",
+    "keywords": ["tickets", "my events", "passes", "qr"],
+    "response": "Your upcoming tickets.",
+    "artifact": {
+      "type": "ticket-pass",
+      "data": {
+        "id": "tkt-001",
+        "eventName": "Riyadh Season Opening",
+        "date": "Oct 28, 2025",
+        "time": "20:00",
+        "seat": "Zone A, Row 4",
+        "qrCode": "valid-code-hash",
+        "location": "Kingdom Arena",
+        "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=400"
+      }
+    },
+    "chips": ["Add to Wallet", "Share", "Sell"]
+  },
+  {
+    "id": "wallet",
+    "keywords": ["wallet", "balance", "money", "cards"],
+    "response": "Digital wallet status.",
+    "artifact": {
+      "type": "analytics-snapshot",
+      "data": {
+        "title": "My Wallet",
+        "metrics": [
+           { "label": "Balance", "value": "SAR 2,450", "trend": "neutral", "trendValue": "Credit" },
+           { "label": "Points", "value": "4,500", "trend": "up", "trendValue": "Gold Tier" },
+           { "label": "Last txn", "value": "-SAR 45", "trend": "neutral", "trendValue": "Uber" }
+        ]
+      }
+    },
+    "chips": ["Top Up", "History", "Cards"]
+  },
+  {
+    "id": "bookings",
+    "keywords": ["bookings", "reservations", "appointments"],
+    "response": "Your active reservations.",
+    "artifact": {
+      "type": "itinerary-timeline",
+      "data": {
+        "title": "Upcoming Bookings",
+        "blocks": [
+           { "id": "bk1", "time": "Tonight, 8pm", "title": "Dinner at Marble", "location": "Marble Steakhouse", "duration": "2h", "type": "meal" },
+           { "id": "bk2", "time": "Sat, 10am", "title": "Haircut", "location": "The Gentlemen's Lounge", "duration": "45m", "type": "experience" }
+        ]
+      }
+    },
+    "chips": ["Modify", "Cancel", "Get Directions"]
+  }
+]

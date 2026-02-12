@@ -1,0 +1,148 @@
+[
+  {
+    "id": "bowling",
+    "keywords": ["bowling", "bowl", "strike", "lane", "pins"],
+    "response": "Hit the lanes.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "bw1", "name": "Yalla Bowling", "category": "Bowling Alley", "image": "family", "rating": 4.6, "distance": "3.0 km", "vibe": ["#fun", "#music"], "priceRange": "$$", "openNow": true },
+          { "id": "bw2", "name": "Strike 10", "category": "Bowling Center", "image": "family", "rating": 4.5, "distance": "5.0 km", "vibe": ["#pro", "#leagues"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Book Lane", "Prices", "Food Menu"]
+  },
+  {
+    "id": "padel",
+    "keywords": ["padel", "tennis", "court", "racket"],
+    "response": "Book a court.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "pd1", "name": "Padel Rush", "category": "Padel Club", "image": "gym", "rating": 4.9, "distance": "2.0 km", "vibe": ["#social", "#tournaments"], "priceRange": "$$", "openNow": true },
+          { "id": "pd2", "name": "In Padel", "category": "Indoor Courts", "image": "gym", "rating": 4.8, "distance": "4.0 km", "vibe": ["#ac", "#premium"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Book Court", "Find Match", "Lessons"]
+  },
+  {
+    "id": "escape_room",
+    "keywords": ["escape room", "puzzle", "mystery", "game"],
+    "response": "Can you escape in time?",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "esc1", "name": "Escape The Room", "category": "Entertainment", "image": "family", "rating": 4.8, "distance": "3.5 km", "vibe": ["#scary", "#hard"], "priceRange": "$$", "openNow": true },
+          { "id": "esc2", "name": "Ahaji", "category": "Escape Game", "image": "family", "rating": 4.7, "distance": "2.0 km", "vibe": ["#mystery", "#detective"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Book Room", "Themes", "Difficulty"]
+  },
+  {
+    "id": "board_games",
+    "keywords": ["board games", "tabletop", "cafe", "monopoly"],
+    "response": "Play the night away.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "bg1", "name": "The Dice", "category": "Board Game Cafe", "image": "coffee-shop", "rating": 4.8, "distance": "1.5 km", "vibe": ["#cozy", "#coffee"], "priceRange": "$", "openNow": true },
+          { "id": "bg2", "name": "Challenge Round", "category": "Gaming Cafe", "image": "coffee-shop", "rating": 4.6, "distance": "3.0 km", "vibe": ["#tournaments", "#snacks"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Reserve Table", "Game Library", "Events"]
+  },
+  {
+    "id": "meetups",
+    "keywords": ["meetup", "social", "group", "community"],
+    "response": "Find your community.",
+    "artifact": {
+      "type": "event-carousel",
+      "data": {
+        "title": "Upcoming Meetups",
+        "events": [
+          { "id": "mt1", "name": "Tech Talk Riyadh", "date": "Tue, 7pm", "time": "19:00", "location": "The Garage", "image": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=400", "category": "Tech", "attendees": 45 },
+          { "id": "mt2", "name": "Photography Walk", "date": "Sat, 4pm", "time": "16:00", "location": "KAFD", "image": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80&w=400", "category": "Art", "attendees": 12 }
+        ]
+      }
+    },
+    "chips": ["Join", "Create New", "Filter"]
+  },
+  {
+    "id": "stories",
+    "keywords": ["story", "video", "reel", "short"],
+    "response": "Check out this story.",
+    "artifact": {
+      "type": "mini-video",
+      "data": {
+        "url": "https://example.com/video.mp4",
+        "user": "@sarah_travels",
+        "description": "Exploring the mountains! 🏔️",
+        "likes": "1.2k",
+        "avatar": "https://images.unsplash.com/photo-1758273239228-04a19ba5a1b3?auto=format&fit=crop&q=80&w=100"
+      }
+    },
+    "chips": ["Like", "Comment", "Share"]
+  },
+  {
+    "id": "leaderboard",
+    "keywords": ["rank", "score", "game", "leaderboard"],
+    "response": "You are climbing the ranks!",
+    "artifact": {
+      "type": "game-scoreboard",
+      "data": { "rank": 1, "points": 2500, "nextRank": 3000, "username": "PlayerOne" }
+    },
+    "chips": ["Play Again", "Challenge Friend", "Rewards"]
+  },
+  {
+    "id": "poll_vote",
+    "keywords": ["poll", "vote", "opinion", "survey"],
+    "response": "Cast your vote.",
+    "artifact": {
+      "type": "poll-card",
+      "data": { "question": "Best time for the meeting?", "options": ["9:00 AM", "10:00 AM", "2:00 PM"], "votes": [12, 45, 20] }
+    },
+    "chips": ["Vote", "View Results", "Share"]
+  },
+  {
+    "id": "user_profile",
+    "keywords": ["profile", "bio", "user info", "card"],
+    "response": "User profile loaded.",
+    "artifact": {
+      "type": "profile-card",
+      "data": { "name": "Dr. Emily Chen", "role": "Cardiologist", "image": "https://images.unsplash.com/photo-1758691463198-dc663b8a64e4?auto=format&fit=crop&q=80&w=400", "location": "City Hospital" }
+    },
+    "chips": ["Connect", "Message", "Follow"]
+  },
+  {
+    "id": "ambassadors",
+    "keywords": ["ambassador", "influencer", "brand rep", "guide"],
+    "response": "Meet our community ambassadors.",
+    "artifact": {
+      "type": "ambassador-carousel",
+      "data": {
+        "ambassadors": [
+          { "id": "a1", "name": "Sarah", "avatar": "https://images.unsplash.com/photo-1758273239228-04a19ba5a1b3?auto=format&fit=crop&q=80&w=100", "followers": 5000, "specialty": ["Travel", "Food"], "fitScore": 95 }
+        ]
+      }
+    },
+    "chips": ["Follow", "View Content", "Contact"]
+  },
+  {
+    "id": "audio_note",
+    "keywords": ["voice note", "audio message", "recording"],
+    "response": "Voice note from Mom.",
+    "artifact": {
+      "type": "voice-note",
+      "data": { "duration": "0:45", "sender": "Mom", "date": "Yesterday" }
+    },
+    "chips": ["Play", "Reply", "Transcribe"]
+  }
+]

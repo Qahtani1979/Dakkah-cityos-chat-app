@@ -1,0 +1,88 @@
+[
+  {
+    "id": "museums",
+    "keywords": ["museum", "exhibition", "gallery", "art", "history"],
+    "response": "Explore the city's rich culture.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "mus1", "name": "National Museum", "category": "History Museum", "image": "museums", "rating": 4.9, "distance": "6.0 km", "vibe": ["#history", "#culture"], "priceRange": "$", "openNow": true },
+          { "id": "mus2", "name": "Modern Art Gallery", "category": "Art Gallery", "image": "museums", "rating": 4.7, "distance": "3.2 km", "vibe": ["#contemporary", "#art"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Get Tickets", "Current Exhibitions", "Audio Guide"]
+  },
+  {
+    "id": "theatre",
+    "keywords": ["theatre", "play", "show", "performance", "drama"],
+    "response": "Here is what's on stage.",
+    "artifact": {
+      "type": "event-carousel",
+      "data": {
+        "title": "Upcoming Shows",
+        "events": [
+          { "id": "th1", "name": "The Phantom", "date": "Tonight", "time": "20:00", "location": "Royal Theatre", "image": "https://images.unsplash.com/photo-1503095392237-7362139136e6?auto=format&fit=crop&q=80&w=400", "category": "Musical", "attendees": 150 },
+          { "id": "th2", "name": "Hamlet", "date": "Tomorrow", "time": "19:00", "location": "City Hall", "image": "https://images.unsplash.com/photo-1507676184212-d03ab07a11d0?auto=format&fit=crop&q=80&w=400", "category": "Play", "attendees": 80 }
+        ]
+      }
+    },
+    "chips": ["Buy Tickets", "Seating Chart", "Cast"]
+  },
+  {
+    "id": "cinema",
+    "keywords": ["cinema", "movie", "film", "imax", "theaters"],
+    "response": "Catch a movie nearby.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "cin1", "name": "VOX Cinemas", "category": "Cinema", "image": "music-venues", "rating": 4.8, "distance": "2.0 km", "vibe": ["#imax", "#gold"], "priceRange": "$$", "openNow": true },
+          { "id": "cin2", "name": "AMC", "category": "Cinema", "image": "music-venues", "rating": 4.7, "distance": "4.0 km", "vibe": ["#recliner", "#popcorn"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Showtimes", "Book Seats", "Now Playing"]
+  },
+  {
+    "id": "library",
+    "keywords": ["library", "books", "reading", "study", "quiet"],
+    "response": "Quiet places to read and learn.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "lib1", "name": "King Fahad Library", "category": "Public Library", "image": "museums", "rating": 4.9, "distance": "3.5 km", "vibe": ["#iconic", "#quiet"], "priceRange": "free", "openNow": true },
+          { "id": "lib2", "name": "Public Library", "category": "Library", "image": "museums", "rating": 4.5, "distance": "1.2 km", "vibe": ["#study", "#community"], "priceRange": "free", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Hours", "Events", "Catalog"]
+  },
+  {
+    "id": "bookstore",
+    "keywords": ["bookstore", "books", "novel", "reading"],
+    "response": "Find your next great read.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "bk1", "name": "Jarir Bookstore", "category": "Bookstore", "image": "shopping", "rating": 4.8, "distance": "2.0 km", "vibe": ["#mega", "#supplies"], "priceRange": "$$", "openNow": true },
+          { "id": "bk2", "name": "Book Club", "category": "Independent", "image": "shopping", "rating": 4.7, "distance": "5.0 km", "vibe": ["#cozy", "#coffee"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Bestsellers", "Events", "Stationery"]
+  },
+  {
+    "id": "music_player",
+    "keywords": ["music", "play", "song", "artist"],
+    "response": "Now playing.",
+    "artifact": {
+      "type": "media-player",
+      "data": { "title": "Bohemian Rhapsody", "artist": "Queen", "cover": "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&q=80&w=400" }
+    },
+    "chips": ["Lyrics", "Playlist", "Share"]
+  }
+]

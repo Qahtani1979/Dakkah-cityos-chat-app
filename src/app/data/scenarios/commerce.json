@@ -1,0 +1,229 @@
+[
+  {
+    "id": "sneakers",
+    "keywords": ["sneaker", "shoe", "jordan", "nike", "adidas", "yeezy"],
+    "response": "Found these limited edition drops nearby.",
+    "artifact": {
+      "type": "product-carousel",
+      "data": {
+        "title": "Trending Drops",
+        "products": [
+          { "id": "p1", "name": "Air Jordan 1 Retro High", "brand": "Nike", "price": "SAR 899", "image": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&q=80&w=400", "description": "Classic colorway, premium leather." },
+          { "id": "p2", "name": "Yeezy Boost 350", "brand": "Adidas", "price": "SAR 1200", "image": "https://images.unsplash.com/photo-1518002171953-a080ee32280d?auto=format&fit=crop&q=80&w=400", "description": "Unmatched comfort with Boost technology." },
+          { "id": "p3", "name": "Dunk Low Panda", "brand": "Nike", "price": "SAR 550", "image": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=400", "description": "Streetwear staple, versatile black and white." }
+        ]
+      }
+    },
+    "chips": ["Filter by Brand", "Sort by Price", "Show Map"]
+  },
+  {
+    "id": "electronics",
+    "keywords": ["phone", "laptop", "camera", "headphone", "electronics", "gadget", "iphone", "samsung"],
+    "response": "Here are the top-rated electronics nearby.",
+    "artifact": {
+      "type": "product-carousel",
+      "data": {
+        "title": "Latest Tech",
+        "products": [
+          { "id": "t1", "name": "Sony WH-1000XM5", "brand": "Sony", "price": "SAR 1499", "image": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&q=80&w=400", "description": "Industry leading noise cancellation." },
+          { "id": "t2", "name": "MacBook Air M2", "brand": "Apple", "price": "SAR 4999", "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca4?auto=format&fit=crop&q=80&w=400", "description": "Supercharged by M2. Thin and light." },
+          { "id": "t3", "name": "Fujifilm X100V", "brand": "Fujifilm", "price": "SAR 6500", "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=400", "description": "Premium compact digital camera." }
+        ]
+      }
+    },
+    "chips": ["Compare", "Read Reviews", "Check Stock"]
+  },
+  {
+    "id": "jewelry",
+    "keywords": ["jewelry", "ring", "necklace", "bracelet", "watch", "diamond", "gold"],
+    "response": "Shine bright. Discover these exquisite pieces.",
+    "artifact": {
+      "type": "product-carousel",
+      "data": {
+        "title": "Luxury Collection",
+        "products": [
+          { "id": "j1", "name": "Classic Gold Band", "brand": "L'Azurde", "price": "SAR 2500", "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=400", "description": "18k Gold timeless design." },
+          { "id": "j2", "name": "Diamond Solitaire", "brand": "Mouawad", "price": "SAR 15000", "image": "https://images.unsplash.com/photo-1605100804763-eb2fc603675d?auto=format&fit=crop&q=80&w=400", "description": "GIA certified 1ct diamond." }
+        ]
+      }
+    },
+    "chips": ["Book Viewing", "Custom Design", "Contact Boutique"]
+  },
+  {
+    "id": "furniture",
+    "keywords": ["furniture", "sofa", "chair", "table", "decor", "home"],
+    "response": "Upgrade your space with these picks.",
+    "artifact": {
+      "type": "product-carousel",
+      "data": {
+        "title": "Modern Living",
+        "products": [
+          { "id": "f1", "name": "Velvet Armchair", "brand": "West Elm", "price": "SAR 1800", "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=400", "description": "Mid-century modern design." },
+          { "id": "f2", "name": "Oak Dining Table", "brand": "Pottery Barn", "price": "SAR 4500", "image": "https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&q=80&w=400", "description": "Solid oak, expandable." }
+        ]
+      }
+    },
+    "chips": ["Delivery Info", "View in Room (AR)", "Dimensions"]
+  },
+  {
+    "id": "malls",
+    "keywords": ["mall", "shopping center", "plaza", "stores"],
+    "response": "Here are the biggest shopping destinations.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "mall1", "name": "Riyadh Park", "category": "Shopping Mall", "image": "shopping", "rating": 4.8, "distance": "3.5 km", "vibe": ["#cinema", "#luxury"], "priceRange": "$$$", "openNow": true },
+          { "id": "mall2", "name": "Nakheel Mall", "category": "Shopping Mall", "image": "shopping", "rating": 4.7, "distance": "5.0 km", "vibe": ["#family", "#dining"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Store Directory", "Cinema Times", "Parking Info"]
+  },
+  {
+    "id": "perfume",
+    "keywords": ["perfume", "fragrance", "cologne", "scent", "oud"],
+    "response": "Discover signature scents.",
+    "artifact": {
+      "type": "product-carousel",
+      "data": {
+        "title": "Niche Fragrances",
+        "products": [
+          { "id": "prf1", "name": "Arabian Oud", "brand": "Arabian Oud", "price": "SAR 450", "image": "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&q=80&w=400", "description": "Rich woody scent with amber notes." },
+          { "id": "prf2", "name": "Black Orchid", "brand": "Tom Ford", "price": "SAR 800", "image": "https://images.unsplash.com/photo-1594035910387-fea477942698?auto=format&fit=crop&q=80&w=400", "description": "Luxurious and sensual fragrance." }
+        ]
+      }
+    },
+    "chips": ["Try Sample", "Gift Wrap", "Bestsellers"]
+  },
+  {
+    "id": "groceries",
+    "keywords": ["grocery", "supermarket", "market", "food store"],
+    "response": "Stock up your pantry.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "groc1", "name": "Danube", "category": "Supermarket", "image": "shopping", "rating": 4.6, "distance": "1.0 km", "vibe": ["#premium", "#bakery"], "priceRange": "$$", "openNow": true },
+          { "id": "groc2", "name": "Tamimi Markets", "category": "Supermarket", "image": "shopping", "rating": 4.7, "distance": "2.2 km", "vibe": ["#imported", "#fresh"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Offers", "Delivery", "Find Item"]
+  },
+  {
+    "id": "boutiques",
+    "keywords": ["boutique", "fashion", "clothing", "dress", "designer"],
+    "response": "Curated fashion finds.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "bout1", "name": "Harvey Nichols", "category": "Department Store", "image": "boutiques", "rating": 4.8, "distance": "4.0 km", "vibe": ["#luxury", "#brands"], "priceRange": "$$$$", "openNow": true },
+          { "id": "bout2", "name": "Pattern", "category": "Concept Store", "image": "boutiques", "rating": 4.9, "distance": "1.5 km", "vibe": ["#local-designers", "#art"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["New Arrivals", "Personal Shopper", "Sale"]
+  },
+  {
+    "id": "flash_deal",
+    "keywords": ["flash sale", "deal", "limited time", "offer"],
+    "response": "Flash sale ending soon!",
+    "artifact": {
+      "type": "flash-sale",
+      "data": {
+        "endTime": "2025-12-31T23:59:59.999Z", 
+        "secondsRemaining": 3500,
+        "name": "Sony WH-1000XM5",
+        "price": 299,
+        "originalPrice": 399,
+        "image": "https://images.unsplash.com/photo-1547932087-59a8f2be576e?auto=format&fit=crop&q=80&w=200"
+      }
+    },
+    "chips": ["Buy Now", "Remind Me", "Share"]
+  },
+  {
+    "id": "plan_compare",
+    "keywords": ["compare plans", "pricing", "subscription"],
+    "response": "Here is a comparison of available plans.",
+    "artifact": {
+      "type": "comparison-grid",
+      "data": {
+        "products": [
+          { "id": "p1", "name": "Basic Plan", "price": "$10/mo", "features": { "users": "1", "storage": "10GB", "support": "Email" } },
+          { "id": "p2", "name": "Pro Plan", "price": "$29/mo", "features": { "users": "5", "storage": "100GB", "support": "Priority" } },
+          { "id": "p3", "name": "Enterprise", "price": "$99/mo", "features": { "users": "Unlimited", "storage": "1TB", "support": "24/7 Live" } }
+        ],
+        "features": [
+          { "key": "users", "name": "User Limit" },
+          { "key": "storage", "name": "Cloud Storage" },
+          { "key": "support", "name": "Support Level" }
+        ]
+      }
+    },
+    "chips": ["Select Basic", "Select Pro", "Contact Sales"]
+  },
+  {
+    "id": "seller_profile",
+    "keywords": ["seller", "vendor", "shop profile", "trust"],
+    "response": "Seller reputation check.",
+    "artifact": {
+      "type": "vendor-trust",
+      "data": {
+        "name": "TechHaven",
+        "rating": 4.9,
+        "verified": true,
+        "sales": "10k+",
+        "responseTime": "< 1hr",
+        "logo": "https://images.unsplash.com/photo-1619571547561-060bcc8f5843?auto=format&fit=crop&q=80&w=200"
+      }
+    },
+    "chips": ["Visit Store", "Contact", "Reviews"]
+  },
+  {
+    "id": "filter_products",
+    "keywords": ["filter", "refine", "search options"],
+    "response": "Refine your search.",
+    "artifact": {
+      "type": "smart-filters",
+      "data": {
+        "filters": [
+          { "id": "price", "label": "Under $50" },
+          { "id": "brand", "label": "Sony" },
+          { "id": "rating", "label": "4+ Stars" },
+          { "id": "prime", "label": "Prime Delivery" }
+        ],
+        "selected": ["prime"]
+      }
+    },
+    "chips": ["Apply", "Clear All", "Save Search"]
+  },
+  {
+    "id": "single_product",
+    "keywords": ["product details", "specs", "buy item"],
+    "response": "Here is the product you asked for.",
+    "artifact": {
+      "type": "product-card",
+      "data": {
+        "id": "p1",
+        "name": "Eames Lounge Chair",
+        "price": 1400,
+        "rating": 4.9,
+        "discount": 15,
+        "image": "https://images.unsplash.com/photo-1762803841693-9efdc2fbf446?auto=format&fit=crop&q=80&w=400"
+      }
+    },
+    "chips": ["Add to Cart", "Buy Now", "Reviews"]
+  },
+  {
+    "id": "digital_receipt",
+    "keywords": ["receipt", "proof of purchase", "transaction record"],
+    "response": "Digital receipt retrieved.",
+    "artifact": {
+      "type": "receipt-card",
+      "data": { "store": "Apple Store", "total": "$1,200", "date": "2025-01-10", "items": ["iPhone 15 Pro"] }
+    },
+    "chips": ["Download", "Share", "Return Item"]
+  }
+]

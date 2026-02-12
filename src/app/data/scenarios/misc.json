@@ -1,0 +1,153 @@
+[
+  {
+    "id": "compare",
+    "keywords": ["compare", "vs", "versus", "difference"],
+    "response": "Here is the comparison you requested.",
+    "artifact": {
+      "type": "comparison-table",
+      "data": {
+        "title": "Neighborhood Comparison",
+        "items": [
+           { "name": "Al Olaya", "values": { "Rent": "High", "Walkability": "Good", "Vibe": "Business" } },
+           { "name": "Al Malqa", "values": { "Rent": "Medium", "Walkability": "Low", "Vibe": "Family" } }
+        ]
+      }
+    },
+    "chips": ["Add Area", "Full Report", "Share"]
+  },
+  {
+    "id": "translate",
+    "keywords": ["translate", "arabic to english", "english to arabic", "language"],
+    "response": "Translation tool ready.",
+    "artifact": {
+      "type": "form-group",
+      "data": {
+        "id": "trans1",
+        "title": "Quick Translate",
+        "type": "text",
+        "options": [] 
+      }
+    },
+    "chips": ["Voice Mode", "Camera", "History"]
+  },
+  {
+    "id": "escrow_check",
+    "keywords": ["escrow", "funds", "hold", "transaction"],
+    "response": "Escrow transaction status.",
+    "artifact": {
+      "type": "escrow-status",
+      "data": { "amount": "$5,000", "status": "held", "released": false, "daysLeft": 3 }
+    },
+    "chips": ["Release Funds", "Dispute", "Details"]
+  },
+  {
+    "id": "invoice_view",
+    "keywords": ["invoice", "bill", "payment due"],
+    "response": "Invoice #INV-001 generated.",
+    "artifact": {
+      "type": "invoice-preview",
+      "data": { "id": "INV-001", "amount": "$450.00", "due": "Tomorrow", "client": "Acme Corp" }
+    },
+    "chips": ["Pay Now", "Download PDF", "Remind"]
+  },
+  {
+    "id": "credit_check",
+    "keywords": ["credit score", "limit", "borrowing power"],
+    "response": "Your current credit standing.",
+    "artifact": {
+      "type": "credit-gauge",
+      "data": { "used": 2400, "limit": 10000, "score": 750 }
+    },
+    "chips": ["Increase Limit", "Report", "Offers"]
+  },
+  {
+    "id": "crypto_port",
+    "keywords": ["crypto", "bitcoin", "wallet", "btc"],
+    "response": "Crypto wallet summary.",
+    "artifact": {
+      "type": "crypto-wallet",
+      "data": { "balance": "0.45 BTC", "value": "$18,200", "change": "+2.4%" }
+    },
+    "chips": ["Trade", "Send", "Receive"]
+  },
+  {
+    "id": "smart_home",
+    "keywords": ["smart home", "lights", "iot control"],
+    "response": "Living room controls.",
+    "artifact": {
+      "type": "smart-home-control",
+      "data": { "device": "Living Room Lights", "state": "On", "brightness": 80 }
+    },
+    "chips": ["Turn Off", "Dim", "Set Scene"]
+  },
+  {
+    "id": "parcel_pickup",
+    "keywords": ["locker", "pickup code", "package"],
+    "response": "Your parcel is ready for pickup.",
+    "artifact": {
+      "type": "parcel-locker",
+      "data": { "code": "8922", "location": "Locker 5 - Mall Entrance", "packageId": "PKG-112" }
+    },
+    "chips": ["Navigate", "Open Locker", "Share Code"]
+  },
+  {
+    "id": "dinner_reservation",
+    "keywords": ["reservation", "booking", "table"],
+    "response": "Table reserved.",
+    "artifact": {
+      "type": "reservation-card",
+      "data": { "place": "Cipriani", "time": "20:00", "guests": 2, "date": "Tonight" }
+    },
+    "chips": ["Modify", "Cancel", "Add to Calendar"]
+  },
+  {
+    "id": "split_bill",
+    "keywords": ["split", "request money", "owe", "payment"],
+    "response": "Payment request sent.",
+    "artifact": {
+      "type": "payment-request",
+      "data": { "amount": "$50", "requester": "John Doe", "reason": "Dinner split" }
+    },
+    "chips": ["Pay", "Decline", "Details"]
+  },
+  {
+    "id": "sys_alert",
+    "keywords": ["alert", "warning", "emergency", "notice"],
+    "response": "Urgent alert received.",
+    "artifact": {
+      "type": "alert-card",
+      "data": { "message": "Severe Sandstorm Warning", "type": "warning", "time": "10 mins ago" }
+    },
+    "chips": ["Dismiss", "Read More", "Share"]
+  },
+  {
+    "id": "agent_sync",
+    "keywords": ["sync", "agent status", "bot", "loading"],
+    "response": "Agent is syncing data.",
+    "artifact": {
+      "type": "agent-sync-card",
+      "data": { "agentName": "TravelBot", "status": "Syncing...", "task": "Finding flights" }
+    },
+    "chips": ["Cancel", "Hide", "Notify Me"]
+  },
+  {
+    "id": "confirm_booking",
+    "keywords": ["confirmed", "booking success", "done"],
+    "response": "Your booking is confirmed.",
+    "artifact": {
+      "type": "confirmation-card",
+      "data": { "title": "Booking Confirmed", "description": "Table for 2 at 8pm", "id": "RES-992" }
+    },
+    "chips": ["Add to Calendar", "Share", "View Details"]
+  },
+  {
+    "id": "select_options",
+    "keywords": ["preferences", "dietary", "options", "chips"],
+    "response": "Please select your preferences.",
+    "artifact": {
+      "type": "selection-chips",
+      "data": { "options": ["Vegan", "Gluten Free", "Spicy", "Halal"] }
+    },
+    "chips": ["Confirm", "Clear", "More"]
+  }
+]

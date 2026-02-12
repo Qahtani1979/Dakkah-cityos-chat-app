@@ -1,0 +1,73 @@
+[
+  {
+    "id": "schools",
+    "keywords": ["school", "education", "k12", "primary", "secondary"],
+    "response": "Top rated schools in your district.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "sch1", "name": "King Faisal School", "category": "International School", "image": "office", "rating": 4.8, "distance": "5.0 km", "vibe": ["#ib", "#elite"], "priceRange": "$$$$", "openNow": true },
+          { "id": "sch2", "name": "British School", "category": "International School", "image": "office", "rating": 4.7, "distance": "3.5 km", "vibe": ["#british-curriculum"], "priceRange": "$$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Admissions", "Tuition Fees", "Visit"]
+  },
+  {
+    "id": "universities",
+    "keywords": ["university", "college", "campus", "degree"],
+    "response": "Higher education institutions nearby.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "uni1", "name": "King Saud University", "category": "University", "image": "office", "rating": 4.9, "distance": "6.0 km", "vibe": ["#campus", "#research"], "priceRange": "$", "openNow": true },
+          { "id": "uni2", "name": "Alfaisal University", "category": "Private University", "image": "office", "rating": 4.8, "distance": "4.0 km", "vibe": ["#medical", "#engineering"], "priceRange": "$$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Programs", "Campus Map", "Events"]
+  },
+  {
+    "id": "courses",
+    "keywords": ["course", "workshop", "class", "learn", "training"],
+    "response": "Expand your skills with these workshops.",
+    "artifact": {
+      "type": "event-carousel",
+      "data": {
+        "title": "Upcoming Workshops",
+        "events": [
+          { "id": "crs1", "name": "Pottery Masterclass", "date": "Sat, 10am", "time": "10:00", "location": "Art Center", "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&q=80&w=400", "category": "Art", "attendees": 8 },
+          { "id": "crs2", "name": "Intro to Coding", "date": "Mon, 6pm", "time": "18:00", "location": "Tech Hub", "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=400", "category": "Tech", "attendees": 15 }
+        ]
+      }
+    },
+    "chips": ["Register", "Syllabus", "Instructors"]
+  },
+  {
+    "id": "tutoring",
+    "keywords": ["tutor", "math", "science", "english", "teacher"],
+    "response": "Find qualified tutors.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "tut1", "name": "Math Whiz Center", "category": "Tutoring", "image": "office", "rating": 4.8, "distance": "2.0 km", "vibe": ["#math", "#exam-prep"], "priceRange": "$$", "openNow": true },
+          { "id": "tut2", "name": "English First", "category": "Language School", "image": "office", "rating": 4.6, "distance": "1.5 km", "vibe": ["#ielts", "#conversation"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Book Session", "Subjects", "Reviews"]
+  },
+  {
+    "id": "online_lesson",
+    "keywords": ["lesson", "course progress", "learn react"],
+    "response": "Continuing your last lesson.",
+    "artifact": {
+      "type": "lesson-tracker",
+      "data": { "lesson": "Advanced React Patterns", "progress": 65, "total": 12, "completed": 8 }
+    },
+    "chips": ["Resume", "Quiz", "Resources"]
+  }
+]

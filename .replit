@@ -1,0 +1,62 @@
+modules = ["nodejs-20", "web", "python-3.11"]
+[agent]
+expertMode = true
+integrations = ["github:1.0.0"]
+
+[nix]
+channel = "stable-25_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Start application"
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd /home/runner/workspace && npm run dev"
+waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[[ports]]
+localPort = 5001
+externalPort = 3000
+
+[deployment]
+deploymentTarget = "static"
+build = ["npm", "run", "build"]
+publicDir = "dist"
+
+[userenv]
+
+[userenv.shared]
+VITE_PAYLOAD_CMS_URL = "https://9e78ac41-ae95-440f-9196-e9263c6eadda-00-130jbk279zua2.janeway.replit.dev:3001"
+VITE_MEDUSA_API_URL = "https://f76865b8-a3a7-41f9-85b2-b0ade8a4fd85-00-3o74vg6b4mqvs.sisko.replit.dev:9000"
+VITE_FLEETBASE_URL = "https://efdaeea4-1883-4ef0-9888-41da8659025c-00-19fmj1r05ozg4.pike.replit.dev:8000"
+VITE_ERPNEXT_URL = "https://ff049349-609e-450d-ab42-e289d89960bb-00-ujg6lz7mnzcy.pike.replit.dev:8080"
+VITE_WALTID_URL = "https://9e78ac41-ae95-440f-9196-e9263c6eadda-00-130jbk279zua2.janeway.replit.dev:7000"
+VITE_CHAT_APP_URL = "https://4c7283c6-2a35-436b-80a2-43220db430bc-00-3n4s1nq4mo6u0.sisko.replit.dev"
+VITE_STRIPE_PUBLISHABLE_KEY = "dk_dev_22d60466c799dbf8d9af7d6af51244359d77d26c9cb7fe287515c8b6667977d2"
+TEMPORAL_ADDRESS = "ap-northeast-1.aws.api.temporal.io:7233"
+TEMPORAL_NAMESPACE = "quickstart-dakkah-cityos.djvai"
+FLEETBASE_ORG_ID = "29ae887c-0e4c-4f15-834e-31a2f1ea9621"
+MEDUSA_ADMIN_PATH = "/commerce/admin"
+MEDUSA_BACKEND_PORT = "9000"
+STOREFRONT_PORT = "5000"
+VITE_CITYOS_API_KEY = "dk_dev_22d60466c799dbf8d9af7d6af51244359d77d26c9cb7fe287515c8b6667977d2"

@@ -1,0 +1,259 @@
+[
+  {
+    "id": "coffee",
+    "keywords": ["coffee", "cafe", "latte", "espresso", "brew", "caffeine", "roastery"],
+    "response": "Here are the top-rated coffee spots nearby.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "c1", "name": "Brew Crew", "category": "Specialty Coffee", "image": "coffee-shop", "rating": 4.9, "distance": "0.5 km", "vibe": ["#roastery", "#work-friendly"], "priceRange": "$$", "openNow": true },
+          { "id": "c2", "name": "Elixir Bunn", "category": "Cafe", "image": "coffee-shop", "rating": 4.8, "distance": "1.2 km", "vibe": ["#cozy", "#award-winning"], "priceRange": "$$", "openNow": true },
+          { "id": "c3", "name": "Camel Step", "category": "Roastery", "image": "coffee-shop", "rating": 4.9, "distance": "2.1 km", "vibe": ["#serious-coffee", "#beans"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Near Me", "Open Now", "Drive-thru"]
+  },
+  {
+    "id": "matcha",
+    "keywords": ["matcha", "green tea", "latte"],
+    "response": "Finding the best matcha in town.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "mat1", "name": "So Matcha", "category": "Matcha Bar", "image": "coffee-shop", "rating": 4.8, "distance": "1.0 km", "vibe": ["#pink", "#trendy"], "priceRange": "$$", "openNow": true },
+          { "id": "mat2", "name": "Urth Caffe", "category": "Cafe", "image": "coffee-shop", "rating": 4.5, "distance": "3.0 km", "vibe": ["#organic", "#busy"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Iced", "Hot", "Desserts"]
+  },
+  {
+    "id": "bubble_tea",
+    "keywords": ["bubble tea", "boba", "milk tea", "tapioca"],
+    "response": "Time for some boba.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "bt1", "name": "Mogoon", "category": "Bubble Tea", "image": "coffee-shop", "rating": 4.7, "distance": "2.5 km", "vibe": ["#korean", "#sweet"], "priceRange": "$$", "openNow": true },
+          { "id": "bt2", "name": "Tea & Co", "category": "Tea House", "image": "coffee-shop", "rating": 4.4, "distance": "1.8 km", "vibe": ["#classic"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Brown Sugar", "Fruit Tea", "Delivery"]
+  },
+  {
+    "id": "ice_cream",
+    "keywords": ["ice cream", "gelato", "dessert", "sorbet", "frozen yogurt"],
+    "response": "Cool down with these treats.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "ic1", "name": "Giovanni L.", "category": "Gelato", "image": "coffee-shop", "rating": 4.8, "distance": "1.5 km", "vibe": ["#italian", "#creamy"], "priceRange": "$$", "openNow": true },
+          { "id": "ic2", "name": "Nine", "category": "Soft Serve", "image": "coffee-shop", "rating": 4.6, "distance": "0.5 km", "vibe": ["#local", "#flavors"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Open Late", "Vegan Options", "Cones"]
+  },
+  {
+    "id": "bakery",
+    "keywords": ["bakery", "bread", "pastry", "croissant", "cake", "sourdough"],
+    "response": "Fresh from the oven.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "bak1", "name": "Easy Bakery", "category": "Artisan Bakery", "image": "coffee-shop", "rating": 4.9, "distance": "1.0 km", "vibe": ["#sourdough", "#morning"], "priceRange": "$$", "openNow": true },
+          { "id": "bak2", "name": "Chestnut", "category": "Patisserie", "image": "coffee-shop", "rating": 4.7, "distance": "2.2 km", "vibe": ["#french", "#elegant"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Gluten Free", "Breakfast", "Delivery"]
+  },
+  {
+    "id": "fine_dining",
+    "keywords": ["fine dining", "fancy", "expensive", "luxury", "date night", "michelin"],
+    "response": "An exquisite culinary experience awaits.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "fd1", "name": "LPM", "category": "French Mediterranean", "image": "restaurant", "rating": 4.9, "distance": "4.0 km", "vibe": ["#chic", "#classy"], "priceRange": "$$$$", "openNow": true },
+          { "id": "fd2", "name": "Cipriani", "category": "Italian", "image": "restaurant", "rating": 4.8, "distance": "5.5 km", "vibe": ["#exclusive", "#glam"], "priceRange": "$$$$", "openNow": true },
+          { "id": "fd3", "name": "Roka", "category": "Japanese Robatayaki", "image": "restaurant", "rating": 4.8, "distance": "3.0 km", "vibe": ["#lively", "#grill"], "priceRange": "$$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Book Table", "Menu", "Dress Code"]
+  },
+  {
+    "id": "steakhouse",
+    "keywords": ["steak", "meat", "grill", "wagyu", "beef"],
+    "response": "Best cuts in the city.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "stk1", "name": "Marble", "category": "Steakhouse", "image": "restaurant", "rating": 4.9, "distance": "2.0 km", "vibe": ["#premium", "#meat-lover"], "priceRange": "$$$$", "openNow": true },
+          { "id": "stk2", "name": "Porterhouse", "category": "Steakhouse", "image": "restaurant", "rating": 4.7, "distance": "3.5 km", "vibe": ["#aged-beef", "#new-york"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Dry Aged", "Tomahawk", "Reserve"]
+  },
+  {
+    "id": "sushi",
+    "keywords": ["sushi", "japanese", "sashimi", "roll", "omakase"],
+    "response": "Top rated sushi spots.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "sus1", "name": "Myazu", "category": "Contemporary Japanese", "image": "restaurant", "rating": 4.9, "distance": "3.0 km", "vibe": ["#trendy", "#artistic"], "priceRange": "$$$$", "openNow": true },
+          { "id": "sus2", "name": "Yokari", "category": "Fine Dining", "image": "restaurant", "rating": 4.8, "distance": "4.5 km", "vibe": ["#minimalist", "#authentic"], "priceRange": "$$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Omakase", "Delivery", "Private Room"]
+  },
+  {
+    "id": "burger",
+    "keywords": ["burger", "cheeseburger", "fast food", "fries", "slider"],
+    "response": "Best burgers in town.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "brg1", "name": "Section-B", "category": "Burger Joint", "image": "restaurant", "rating": 4.8, "distance": "1.5 km", "vibe": ["#casual", "#juicy"], "priceRange": "$$", "openNow": true },
+          { "id": "brg2", "name": "Hamburgini", "category": "Fast Food", "image": "restaurant", "rating": 4.5, "distance": "0.5 km", "vibe": ["#quick", "#value"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Delivery", "Meal Deal", "Open Late"]
+  },
+  {
+    "id": "pizza",
+    "keywords": ["pizza", "italian", "slice", "napolitan"],
+    "response": "Authentic pizza ovens fired up.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "piz1", "name": "Blanca", "category": "Pizzeria", "image": "restaurant", "rating": 4.8, "distance": "2.0 km", "vibe": ["#wood-fired", "#cozy"], "priceRange": "$$", "openNow": true },
+          { "id": "piz2", "name": "Finzione", "category": "Italian", "image": "restaurant", "rating": 4.6, "distance": "3.2 km", "vibe": ["#family", "#pasta"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Wood Fired", "Delivery", "Thin Crust"]
+  },
+  {
+    "id": "street_food",
+    "keywords": ["street food", "food truck", "snack", "quick bite", "shawarma"],
+    "response": "Local favorites and street eats.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "sf1", "name": "Mama Noura", "category": "Middle Eastern", "image": "restaurant", "rating": 4.7, "distance": "1.5 km", "vibe": ["#casual", "#shawarma"], "priceRange": "$", "openNow": true },
+          { "id": "sf2", "name": "Al Baik", "category": "Fried Chicken", "image": "restaurant", "rating": 4.9, "distance": "2.0 km", "vibe": ["#legendary", "#spicy"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Open Late", "Drive-thru", "Spicy"]
+  },
+  {
+    "id": "healthy",
+    "keywords": ["healthy", "salad", "diet", "keto", "clean eating", "bowl"],
+    "response": "Fresh and healthy options.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "hlt1", "name": "Boga", "category": "Salad Bar", "image": "restaurant", "rating": 4.7, "distance": "1.2 km", "vibe": ["#fresh", "#custom"], "priceRange": "$$", "openNow": true },
+          { "id": "hlt2", "name": "Moon Shell", "category": "Vegan", "image": "restaurant", "rating": 4.8, "distance": "2.5 km", "vibe": ["#plant-based", "#peaceful"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Vegan", "Keto", "Juice"]
+  },
+  {
+    "id": "acai",
+    "keywords": ["acai", "smoothie", "bowl", "superfood"],
+    "response": "Refreshing acai bowls nearby.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "ac1", "name": "Oakberry", "category": "Acai", "image": "coffee-shop", "rating": 4.8, "distance": "0.8 km", "vibe": ["#purple", "#quick"], "priceRange": "$$", "openNow": true },
+          { "id": "ac2", "name": "Signature", "category": "Juice Bar", "image": "coffee-shop", "rating": 4.6, "distance": "1.5 km", "vibe": ["#fruity"], "priceRange": "$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Toppings", "Delivery", "Smoothies"]
+  },
+  {
+    "id": "brunch",
+    "keywords": ["brunch", "breakfast", "eggs", "pancakes", "morning"],
+    "response": "Best spots for a lazy morning.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "bru1", "name": "Chapter", "category": "Modern Brunch", "image": "restaurant", "rating": 4.8, "distance": "2.0 km", "vibe": ["#aesthetic", "#innovative"], "priceRange": "$$", "openNow": true },
+          { "id": "bru2", "name": "Urth Caffe", "category": "Cafe", "image": "coffee-shop", "rating": 4.6, "distance": "3.5 km", "vibe": ["#organic", "#patio"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Outdoor Seating", "Coffee", "Waitlist"]
+  },
+  {
+    "id": "rooftops_nightlife",
+    "keywords": ["rooftop", "view", "skyline", "terrace", "lounge"],
+    "response": "Elevate your evening at these rooftops.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "rt1", "name": "Sky Bridge Lounge", "category": "Lounge", "image": "rooftop-bar", "rating": 4.8, "distance": "3.0 km", "vibe": ["#views", "#chic"], "priceRange": "$$$", "openNow": true },
+          { "id": "rt2", "name": "The Globe", "category": "Fine Dining", "image": "rooftop-bar", "rating": 4.9, "distance": "5.0 km", "vibe": ["#iconic", "#panoramic"], "priceRange": "$$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Reserve Table", "Cocktails", "Dress Code"]
+  },
+  {
+    "id": "live_music",
+    "keywords": ["live music", "band", "jazz", "performance", "concert"],
+    "response": "Venues with live entertainment.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "lm1", "name": "The Warehouse", "category": "Music Venue", "image": "music-venues", "rating": 4.7, "distance": "4.5 km", "vibe": ["#live-music", "#industrial"], "priceRange": "$$", "openNow": true },
+          { "id": "lm2", "name": "Serafina", "category": "Italian", "image": "restaurant", "rating": 4.6, "distance": "2.8 km", "vibe": ["#jazz-nights", "#romantic"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Tonight", "Upcoming", "Genre"]
+  },
+  {
+    "id": "speakeasy",
+    "keywords": ["speakeasy", "hidden bar", "secret", "cocktail"],
+    "response": "Shh. Here are the hidden gems.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "spk1", "name": "Bordello", "category": "Lounge", "image": "music-venues", "rating": 4.8, "distance": "3.2 km", "vibe": ["#dark", "#intimate"], "priceRange": "$$$", "openNow": true },
+          { "id": "spk2", "name": "Library Club", "category": "Members Club", "image": "music-venues", "rating": 4.9, "distance": "5.0 km", "vibe": ["#exclusive", "#jazz"], "priceRange": "$$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Password", "Reservation", "Dress Code"]
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "handyman",
+    "keywords": ["handyman", "repair", "fix", "maintenance"],
+    "response": "Find a reliable handyman.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "hm1", "name": "Mr. Fix It", "category": "Handyman Services", "image": "office", "rating": 4.8, "distance": "2.0 km", "vibe": ["#reliable", "#all-trades"], "priceRange": "$$", "openNow": true },
+          { "id": "hm2", "name": "Home Pro", "category": "Maintenance", "image": "office", "rating": 4.6, "distance": "3.0 km", "vibe": ["#professional", "#contractors"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Get Quote", "Emergency", "Book"]
+  },
+  {
+    "id": "plumber",
+    "keywords": ["plumber", "leak", "pipe", "drain"],
+    "response": "Plumbing services nearby.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "pl1", "name": "Fast Plumbers", "category": "Plumbing", "image": "office", "rating": 4.7, "distance": "1.5 km", "vibe": ["#24h", "#emergency"], "priceRange": "$$", "openNow": true },
+          { "id": "pl2", "name": "City Plumbing", "category": "Plumbing", "image": "office", "rating": 4.5, "distance": "2.5 km", "vibe": ["#residential", "#installations"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Call Now", "Book", "Rates"]
+  },
+  {
+    "id": "electrician",
+    "keywords": ["electrician", "power", "wiring", "light"],
+    "response": "Licensed electricians.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "el1", "name": "Bright Spark", "category": "Electrical", "image": "office", "rating": 4.9, "distance": "2.0 km", "vibe": ["#certified", "#safety"], "priceRange": "$$", "openNow": true },
+          { "id": "el2", "name": "Volt Masters", "category": "Electrical", "image": "office", "rating": 4.7, "distance": "3.0 km", "vibe": ["#commercial", "#home"], "priceRange": "$$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Emergency", "Inspection", "Book"]
+  },
+  {
+    "id": "decor",
+    "keywords": ["decor", "interior", "design", "furnishing"],
+    "response": "Spruce up your home.",
+    "artifact": {
+      "type": "product-carousel",
+      "data": {
+        "title": "Home Decor",
+        "products": [
+          { "id": "dc1", "name": "Ceramic Vase", "brand": "West Elm", "price": "SAR 250", "image": "https://images.unsplash.com/photo-1581539250439-c96689b516dd?auto=format&fit=crop&q=80&w=400", "description": "Handcrafted ceramic vase." },
+          { "id": "dc2", "name": "Wall Art Abstract", "brand": "Pottery Barn", "price": "SAR 800", "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=400", "description": "Large canvas print." }
+        ]
+      }
+    },
+    "chips": ["Delivery", "AR View", "More Styles"]
+  },
+  {
+    "id": "garden",
+    "keywords": ["garden", "plants", "nursery", "flowers", "landscaping"],
+    "response": "Greenery for your home.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "grd1", "name": "Sultan Garden Center", "category": "Nursery", "image": "hiking-trail", "rating": 4.8, "distance": "4.0 km", "vibe": ["#huge", "#plants"], "priceRange": "$$", "openNow": true },
+          { "id": "grd2", "name": "Green Life", "category": "Plant Shop", "image": "hiking-trail", "rating": 4.7, "distance": "2.0 km", "vibe": ["#indoor", "#pots"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Delivery", "Plant Care", "Landscape Design"]
+  },
+  {
+    "id": "house_hunting",
+    "keywords": ["buy house", "property", "real estate", "listing"],
+    "response": "Found a matching property.",
+    "artifact": {
+      "type": "property-listing",
+      "data": {
+        "id": "prop1",
+        "price": "$850,000",
+        "beds": 4,
+        "baths": 3,
+        "sqft": 2500,
+        "address": "123 Maple Drive, Beverly Hills",
+        "image": "https://images.unsplash.com/photo-1627141234469-24711efb373c?auto=format&fit=crop&q=80&w=600"
+      }
+    },
+    "chips": ["Schedule Tour", "Mortgage Calc", "Contact Agent"]
+  },
+  {
+    "id": "home_repair",
+    "keywords": ["fix leak", "plumber request", "maintenance ticket"],
+    "response": "Maintenance request logged.",
+    "artifact": {
+      "type": "maintenance-req",
+      "data": { "id": "req1", "type": "Plumbing Leak", "status": "Scheduled", "date": "Mon, 10am" }
+    },
+    "chips": ["Reschedule", "Cancel", "Add Photo"]
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "pet_health",
+    "keywords": ["vet", "veterinarian", "pet clinic", "animal hospital"],
+    "response": "Best care for your furry friends.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "vet1", "name": "Advanced Pet Clinic", "category": "Veterinary", "image": "family", "rating": 4.9, "distance": "3.0 km", "vibe": ["#24h", "#emergency"], "priceRange": "$$$", "openNow": true },
+          { "id": "vet2", "name": "Happy Paws", "category": "Vet Clinic", "image": "family", "rating": 4.7, "distance": "1.5 km", "vibe": ["#caring", "#vaccines"], "priceRange": "$$", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Book Appt", "Emergency", "Services"]
+  },
+  {
+    "id": "pet_store",
+    "keywords": ["pet shop", "pet food", "cat food", "dog food", "supplies"],
+    "response": "Supplies for your pets.",
+    "artifact": {
+      "type": "product-carousel",
+      "data": {
+        "title": "Pet Essentials",
+        "products": [
+          { "id": "ps1", "name": "Royal Canin Mini", "brand": "Royal Canin", "price": "SAR 120", "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=400", "description": "Adult small breed dog food." },
+          { "id": "ps2", "name": "Cat Tree Tower", "brand": "Paws", "price": "SAR 450", "image": "https://images.unsplash.com/photo-1545249390-6bdfa2aeb034?auto=format&fit=crop&q=80&w=400", "description": "Multi-level activity center." }
+        ]
+      }
+    },
+    "chips": ["Delivery", "Grooming Items", "Toys"]
+  },
+  {
+    "id": "dog_park",
+    "keywords": ["dog park", "walking dog", "pet friendly park"],
+    "response": "Places to walk your dog.",
+    "artifact": {
+      "type": "poi-carousel",
+      "data": {
+        "pois": [
+          { "id": "dp1", "name": "Bark Park", "category": "Dog Park", "image": "hiking-trail", "rating": 4.6, "distance": "5.0 km", "vibe": ["#fenced", "#social"], "priceRange": "Free", "openNow": true },
+          { "id": "dp2", "name": "Wadi Walk", "category": "Pet Friendly Trail", "image": "hiking-trail", "rating": 4.8, "distance": "8.0 km", "vibe": ["#nature", "#leash-req"], "priceRange": "Free", "openNow": true }
+        ]
+      }
+    },
+    "chips": ["Map", "Rules", "Meetups"]
+  },
+  {
+    "id": "grooming",
+    "keywords": ["grooming", "pet spa", "dog wash", "cat grooming"],
+    "response": "Pamper your pet.",
+    "artifact": {
+      "type": "service-menu",
+      "data": {
+        "title": "Grooming Menu",
+        "items": [
+          { "id": "gr1", "name": "Full Groom (Small)", "description": "Bath, cut, nails.", "duration": "2h", "price": "SAR 150" },
+          { "id": "gr2", "name": "Bath & Brush", "description": "Wash and dry only.", "duration": "1h", "price": "SAR 80" },
+          { "id": "gr3", "name": "Nail Trim", "description": "Quick clip.", "duration": "15m", "price": "SAR 30" }
+        ]
+      }
+    },
+    "chips": ["Book Now", "Mobile Van", "Packages"]
+  }
+]

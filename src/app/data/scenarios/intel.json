@@ -1,0 +1,100 @@
+[
+  {
+    "id": "trending_zones",
+    "keywords": ["trending", "popular", "hotspot", "busy"],
+    "response": "Here is what's trending in Riyadh right now.",
+    "artifact": {
+      "type": "zone-heatmap",
+      "data": {
+        "title": "Trending Zones",
+        "zones": [
+          { "id": "z1", "name": "KAFD", "score": 95, "trend": "up", "factors": { "vibes": 90, "activity": 98, "safety": 100, "events": 85 } },
+          { "id": "z2", "name": "Al Olaya", "score": 88, "trend": "stable", "factors": { "vibes": 85, "activity": 90, "safety": 95, "events": 70 } },
+          { "id": "z3", "name": "Laysen Valley", "score": 92, "trend": "up", "factors": { "vibes": 95, "activity": 85, "safety": 98, "events": 90 } }
+        ]
+      }
+    },
+    "chips": ["View Map", "Deep Dive", "Compare"]
+  },
+  {
+    "id": "safety_intel",
+    "keywords": ["safety", "crime", "secure", "safe"],
+    "response": "Safety assessment for this area.",
+    "artifact": {
+      "type": "analytics-snapshot",
+      "data": {
+        "title": "Safety Score: High",
+        "metrics": [
+           { "label": "Crime Rate", "value": "Very Low", "trend": "neutral", "trendValue": "0.1%" },
+           { "label": "Lighting", "value": "Excellent", "trend": "up", "trendValue": "100%" },
+           { "label": "Police Pres.", "value": "High", "trend": "neutral", "trendValue": "24/7" }
+        ]
+      }
+    },
+    "chips": ["Report Issue", "Emergency #s", "Details"]
+  },
+  {
+    "id": "rental_intel",
+    "keywords": ["rent", "price", "housing", "cost"],
+    "response": "Rental market insights.",
+    "artifact": {
+      "type": "analytics-snapshot",
+      "data": {
+        "title": "Average Rent (2BR)",
+        "metrics": [
+           { "label": "Al Malqa", "value": "SAR 85k", "trend": "up", "trendValue": "+5%" },
+           { "label": "Al Narjis", "value": "SAR 65k", "trend": "up", "trendValue": "+8%" },
+           { "label": "Al Yasmin", "value": "SAR 75k", "trend": "stable", "trendValue": "0%" }
+        ]
+      }
+    },
+    "chips": ["Find Listings", "Price History", "Agents"]
+  },
+  {
+    "id": "demographics",
+    "keywords": ["demographics", "population", "people", "age"],
+    "response": "Area demographic breakdown.",
+    "artifact": {
+      "type": "analytics-snapshot",
+      "data": {
+        "title": "Demographics: Al Olaya",
+        "metrics": [
+           { "label": "Median Age", "value": "29", "trend": "neutral", "trendValue": "Young Pro" },
+           { "label": "Expats", "value": "35%", "trend": "up", "trendValue": "Diverse" },
+           { "label": "Families", "value": "40%", "trend": "neutral", "trendValue": "Stable" }
+        ]
+      }
+    },
+    "chips": ["Full Report", "Compare", "Trends"]
+  },
+  {
+    "id": "permit_status",
+    "keywords": ["permit", "license", "application", "status"],
+    "response": "Your permit application status.",
+    "artifact": {
+      "type": "permit-app",
+      "data": { "type": "Building Renovation", "status": "In Review", "step": 2, "totalSteps": 5 }
+    },
+    "chips": ["Upload Docs", "Message", "Cancel"]
+  },
+  {
+    "id": "report_pothole",
+    "keywords": ["report", "issue", "pothole", "complaint", "311"],
+    "response": "Issue reported successfully.",
+    "artifact": {
+      "type": "issue-reporter",
+      "data": { "category": "Pothole", "location": "Main St & 5th Ave", "status": "Submitted" }
+    },
+    "chips": ["Track", "Add Photo", "My Reports"]
+  },
+  {
+    "id": "tax_overview",
+    "keywords": ["tax", "vat", "zakat", "finance summary"],
+    "response": "Tax summary for 2024.",
+    "artifact": {
+      "type": "tax-summary",
+      "data": { "total": "$1,200", "paid": "$1,000", "due": "$200", "year": "2024" }
+    },
+    "chips": ["Pay Due", "Download", "Audit"]
+  }
+]
