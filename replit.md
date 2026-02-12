@@ -92,16 +92,29 @@ PAYLOAD_GATEWAY_PROMPT.md - Prompt to set up API gateway in Payload CMS project
 
 ## Key Files
 - `PAYLOAD_GATEWAY_PROMPT.md` - Full instructions for setting up the API gateway in the Payload CMS project
-- `src/app/services/` - Frontend service layer (ready to use once gateway is built)
-- `src/app/utils/copilot-brain.ts` - Current keyword-based response engine (to be replaced with real API calls)
-- `src/app/hooks/useCopilot.ts` - Main copilot hook managing chat state
+- `src/app/services/` - Frontend service layer connected to all backend systems
+- `src/app/services/copilot-gateway.ts` - Smart gateway integration with intent detection and response formatting
+- `src/app/utils/copilot-brain.ts` - Local keyword-based response engine (fallback when gateway unavailable)
+- `src/app/hooks/useCopilot.ts` - Main copilot hook with gateway-first, local-fallback flow
+- `src/app/components/system-health-dashboard.tsx` - System connectivity dashboard (direct + gateway tests)
+
+## Gateway Integration Flow
+The copilot now follows a gateway-first approach:
+1. User sends a message
+2. `CopilotGateway.tryEnrich()` detects intent (commerce, logistics, ERP, identity, content, payments, workflows)
+3. If intent matches, it calls the appropriate service through the Payload CMS gateway
+4. If gateway returns data, it formats the response into copilot artifacts (carousels, cards, chips)
+5. If gateway fails or no intent detected, falls back to local `processUserMessage()` brain
+6. System actions (simulations, events) always use the local brain
 
 ## Notes
 - Supabase connection uses external project (ipluvaoinmgiodkfhzzn)
 - Tailwind CSS v4 with `@tailwindcss/vite` plugin
 - React and react-dom are peer dependencies installed at 18.3.1
-- The CopilotBrain currently uses local keyword matching with JSON scenarios; will be upgraded to use real backend data through the gateway service layer
+- The CopilotBrain still handles local keyword matching with JSON scenarios as fallback
 - Temporal Cloud workflows handle multi-system orchestration (e.g., order -> invoice -> delivery -> notification)
+- System Health Dashboard accessible via Activity icon in header; tests both direct URLs and gateway API routes
+- Chat App (VITE_CHAT_APP_URL) has direct connectivity but no gateway route (it's a separate messaging system)
 
 ## User Preferences
 - Systems integration through Payload CMS as central API gateway

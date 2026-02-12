@@ -1,13 +1,13 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import type { Message, ChatThread } from '../types/copilot';
 import { processUserMessage } from '../utils/copilot-brain';
+import { CopilotGateway } from '../services/copilot-gateway';
 import { projectId, publicAnonKey } from '../../../utils/supabase/info';
 import { useAuth } from '../context/auth-context';
 import { supabase } from '../utils/supabase';
 
-// Configuration
 const USE_MOCK_DELAY = true;
-const MOCK_DELAY_MS = 800;
+const MOCK_DELAY_MS = 600;
 const SERVER_URL = `https://${projectId}.supabase.co/functions/v1/make-server-e4305fae`;
 
 export function useCopilot() {
@@ -202,40 +202,58 @@ export function useCopilot() {
         await new Promise(resolve => setTimeout(resolve, MOCK_DELAY_MS));
       }
 
-      // Pass systemAction to brain
-      const response = processUserMessage(content.trim(), systemAction);
+      let responseContent: string;
+      let responseArtifacts: any[] | undefined;
+      let responseMode: 'suggest' | 'propose' | 'execute' | undefined;
+      let simulatedEvent: string | undefined;
+      let dataSource: 'gateway' | 'local' = 'local';
 
-      // Determine role:
-      // If systemAction is present, it defaults to 'system'.
-      // However, if the response contains artifacts (like a card), we treat it as an 'assistant' message
-      // so it renders with the full UI capabilities.
-      const role = systemAction && (!response.artifacts || response.artifacts.length === 0) ? 'system' : 'assistant';
+      if (systemAction) {
+        const response = processUserMessage(content.trim(), systemAction);
+        responseContent = response.content;
+        responseArtifacts = response.artifacts;
+        responseMode = response.mode;
+        simulatedEvent = response.simulatedEvent;
+      } else {
+        const gatewayResult = await CopilotGateway.tryEnrich(content.trim());
+        if (gatewayResult) {
+          responseContent = gatewayResult.content;
+          responseArtifacts = gatewayResult.artifacts;
+          responseMode = gatewayResult.mode;
+          dataSource = gatewayResult.source;
+          console.log(`[Copilot] Response from: ${dataSource}`);
+        } else {
+          const response = processUserMessage(content.trim());
+          responseContent = response.content;
+          responseArtifacts = response.artifacts;
+          responseMode = response.mode;
+          simulatedEvent = response.simulatedEvent;
+        }
+      }
+
+      const role = systemAction && (!responseArtifacts || responseArtifacts.length === 0) ? 'system' : 'assistant';
 
       const assistantMessage: Message = {
         id: (Date.now() + 1).toString(),
         role,
-        content: response.content,
+        content: responseContent,
         timestamp: new Date(),
-        artifacts: response.artifacts,
-        mode: response.mode,
+        artifacts: responseArtifacts,
+        mode: responseMode,
       };
 
-      // Use the local variable which is definitely "messages before assistant response"
       const finalMessages = [...updatedMessagesWithUser, assistantMessage];
       setMessages(finalMessages);
       messagesRef.current = finalMessages;
       
       saveHistory(finalMessages, activeId);
 
-      // --- SIMULATION TRIGGER ---
-      if (response.simulatedEvent) {
-          const evt = response.simulatedEvent;
-          // Random delay between 3s and 6s
+      if (simulatedEvent) {
+          const evt = simulatedEvent;
           const delay = 3000 + Math.random() * 3000;
           console.log(`[Copilot] Queuing simulation event: ${evt} in ${delay}ms`);
           
           setTimeout(() => {
-              // Recursively call sendMessage with system action
               sendMessage("", { type: 'simulate_event', name: evt });
           }, delay);
       }
